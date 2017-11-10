@@ -109,4 +109,50 @@
         <property name="allowRequestOverride" value="true"/>
         <!--<property name="requestContextAttribute" value="rc"/> &lt;!&ndash;      request属性引用名称&ndash;&gt;-->
     </bean>
+
+    <!--web request interceptor-->
+    <!--<mvc:interceptors>-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<bean class="net.xuele.member.web.manager.IllegalCharacterInterceptor"/>-->
+        <!--</mvc:interceptor>-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<bean class="net.xuele.member.web.manager.SessionInfoInterceptor"/>-->
+        <!--</mvc:interceptor>-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<bean class="net.xuele.member.web.manager.MenuResourcePathRecorderInterceptor"/>-->
+        <!--</mvc:interceptor>-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<mvc:exclude-mapping path="/home/init"/>-->
+            <!--<mvc:exclude-mapping path="/userPay/notice"/>-->
+            <!--<mvc:exclude-mapping path="/*Init/**"/>-->
+            <!--<mvc:exclude-mapping path="/applyClass/**"/>-->
+            <!--<bean class="net.xuele.member.web.manager.InitInterceptor"/>-->
+        <!--</mvc:interceptor>-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<bean class="net.xuele.rednode.manager.RedNodeInterceptor" />-->
+        <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
+
+    <!--<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
+    <!--&lt;!&ndash; default -1 no limit &ndash;&gt;-->
+    <!--<property name="maxUploadSize">-->
+        <!--<value>100000000</value>-->
+    <!--</property>-->
+    <!--&lt;!&ndash; default:10240 &ndash;&gt;-->
+    <!--<property name="maxInMemorySize">-->
+        <!--<value>1738400</value>-->
+    <!--</property>-->
+    <!--<property name="defaultEncoding">-->
+        <!--<value>UTF-8</value>-->
+    <!--</property>-->
+    <!--&lt;!&ndash; 进入控制器拦截 &ndash;&gt;-->
+    <!--<property name="resolveLazily">-->
+        <!--<value>true</value>-->
+    <!--</property>-->
+
 </beans>
