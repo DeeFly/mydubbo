@@ -1,0 +1,10 @@
+<!-- menu begin -->
+#set($user=${request.session.getAttribute("SPRING_SECURITY_CONTEXT").authentication.principal})
+<!-- menu data for js -->
+#set($menu=${user.menu})
+<script>
+    var XL = XL || {};
+    XL.NewMenuUnionData = $!{menu.toJsonString()};
+</script>
+<script src="http://asset.xueleyun.com/v2/cjs/common/newmenu.js?version=${version}"></script>
+<!-- menu end-->

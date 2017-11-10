@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="dubbo-web" owner="gaofei" organization="public"/>
+
+    <dubbo:registry address="zookeeper://zk.infra.middleware.xueleyun.com:2181"/>
+
+    <dubbo:consumer retries="0" timeout="60000"/>
+    <!--uncomment this if you want to test dubbo's monitor-->
+    <!--<dubbo:monitor protocol="registry"/>-->
+
+    <!--在resources目录下添加纯文本文件META-INF/dubbo/com.alibaba.dubbo.rpc.Filter-->
+    <!--check=false 表示启动的时候不用非得启动服务，不检查是否启动了服务-->
+    <dubbo:reference id="interfp" interface="com.gaofei.interf.InterfTest" filter="myFilterTest" check="false"/>
+    <dubbo:reference id="studentService" interface="com.gaofei.interf.StudentService" check="false"/>
+
+    <!-- directly connect to provider to simulate the access to non-dubbo rest services -->
+    <!--<dubbo:reference id="anotherUserRestService" interface="com.alibaba.dubbo.demo.user.facade.AnotherUserRestService" url="rest://localhost:8888/services/"/>-->
+
+</beans>

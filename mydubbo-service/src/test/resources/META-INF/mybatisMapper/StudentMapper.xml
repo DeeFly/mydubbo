@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gaofei.persist.dao.StudentMapper">
+    <resultMap id="studentDomain" type="com.gaofei.persist.domain.StudentDomain">
+        <id column="sid" property="studentId" jdbcType="INTEGER" javaType="int"/>
+        <result column="sage" property="age" jdbcType="INTEGER"/>
+        <result column="ssex" property="gender" jdbcType="INTEGER"/>
+        <result column="sname" property="studentName" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="getStudentById" parameterType="int" resultMap="studentDomain">
+        SELECT sid, sage, ssex, sname
+        FROM studentDomain
+        WHERE sid = #{id}
+    </select>
+    
+    <update id="updateStudent" parameterType="int" >
+        UPDATE studentDomain
+        SET sage = #{age}
+        WHERE sid = #{id}
+    </update>
+
+    <update id="updateStudentBySex" parameterType="int">
+        UPDATE studentDomain
+        SET sage = #{age}
+        where ssex = #{sex}
+    </update>
+</mapper>
