@@ -110,6 +110,13 @@
         <!--<property name="requestContextAttribute" value="rc"/> &lt;!&ndash;      request属性引用名称&ndash;&gt;-->
     </bean>
 
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.gaofei.web.interceptor.AddAttributeInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
     <!--web request interceptor-->
     <!--<mvc:interceptors>-->
         <!--<mvc:interceptor>-->

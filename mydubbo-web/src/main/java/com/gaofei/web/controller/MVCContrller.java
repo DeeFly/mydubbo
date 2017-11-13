@@ -12,6 +12,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * Created by GaoQingming on 2017/8/15 0015.
@@ -26,6 +29,14 @@ public class MVCContrller {
     @Autowired
     private InterfTest interfTest;
     private final Logger logger = LoggerFactory.getLogger(MVCContrller.class);
+
+    @RequestMapping("handlerTest")
+    @ResponseBody
+    public String handlerTest(HttpServletRequest request) {
+        System.out.println("handler执行了");
+        String s = (String)request.getAttribute("preHandler");
+        return s;
+    }
 
     @RequestMapping("third")
     public String testContrller() {
