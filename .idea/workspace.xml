@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e590362b-e2da-46bb-ad5e-0f6c135ebd1d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/exception/MydubboException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/response/reflectTest/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/response/reflectTest/Wrapper1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/response/reflectTest/Wrapper2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/resources/META-INF/spring/applicationContext-security.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mydubbo-service/target/test-classes/InterfTestTest.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-api/target/classes/com/gaofei/interf/StudentService.class" afterPath="$PROJECT_DIR$/mydubbo-api/target/classes/com/gaofei/interf/StudentService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/impl/StudentServiceImpl.class" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/impl/StudentServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-web/target/classes/com/gaofei/web/aop/MyAopTest.class" afterPath="$PROJECT_DIR$/mydubbo-web/target/classes/com/gaofei/web/aop/MyAopTest.class" />
@@ -15,29 +9,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-web/target/mydubbo-web/WEB-INF/classes/com/gaofei/web/aop/MyAopTest.class" afterPath="$PROJECT_DIR$/mydubbo-web/target/mydubbo-web/WEB-INF/classes/com/gaofei/web/aop/MyAopTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-web/target/mydubbo-web/WEB-INF/classes/com/gaofei/web/controller/people/StudentController.class" afterPath="$PROJECT_DIR$/mydubbo-web/target/mydubbo-web/WEB-INF/classes/com/gaofei/web/controller/people/StudentController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-web/target/mydubbo-web/WEB-INF/lib/mydubbo-api-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/mydubbo-web/target/mydubbo-web/WEB-INF/lib/mydubbo-api-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/mydubbo_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/mydubbo_web_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/interf/StudentService.java" afterPath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/interf/StudentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/mydubbo-service.iml" afterPath="$PROJECT_DIR$/mydubbo-service/mydubbo-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/pom.xml" afterPath="$PROJECT_DIR$/mydubbo-service/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/StudentServiceImpl.java" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/StudentServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-mybatis.xml" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/resources/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/spring/service-test.xml" afterPath="$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/spring/service-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/src/test/resources/jdbc.properties" afterPath="$PROJECT_DIR$/mydubbo-service/src/test/resources/jdbc.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/META-INF/spring/applicationContext-mybatis.xml" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/META-INF/spring/applicationContext-mybatis.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/jdbc.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/target/test-classes/META-INF/spring/service-test.xml" afterPath="$PROJECT_DIR$/mydubbo-service/target/test-classes/META-INF/spring/service-test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/target/test-classes/jdbc.properties" afterPath="$PROJECT_DIR$/mydubbo-service/target/test-classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-web/mydubbo-web.iml" afterPath="$PROJECT_DIR$/mydubbo-web/mydubbo-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-web/pom.xml" afterPath="$PROJECT_DIR$/mydubbo-web/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/aop/MyAopTest.java" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/aop/MyAopTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/controller/people/StudentController.java" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/controller/people/StudentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-web/src/main/resources/META-INF/spring/dubbo-demo-consumer.xml" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/resources/META-INF/spring/dubbo-demo-consumer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-web/target/mydubbo-web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/mydubbo-web/target/mydubbo-web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mydubbo-service/src/test/java/InterfTestTest.java" afterPath="$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/InterfTestTest.java" />
     </list>
     <ignored path="mydubbo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1151,15 +1128,15 @@
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="603" column="13" selection-start-line="603" selection-start-column="13" selection-end-line="603" selection-end-column="13" />
+              <caret line="599" column="13" selection-start-line="599" selection-start-column="13" selection-end-line="599" selection-end-column="13" />
               <folding>
-                <marker date="1512977442000" expanded="true" signature="59:236314" placeholder="..." />
-                <marker date="1512977442000" expanded="true" signature="98:926" placeholder="..." />
-                <marker date="1512977442000" expanded="true" signature="192:926" placeholder="..." />
-                <marker date="1512977442000" expanded="true" signature="233563:233580" placeholder="..." />
-                <marker date="1512977442000" expanded="true" signature="233563:233598" placeholder="..." />
-                <marker date="1512977442000" expanded="true" signature="233563:233611" placeholder="..." />
-                <marker date="1512977442000" expanded="true" signature="233563:233626" placeholder="..." />
+                <marker date="1512977700000" expanded="true" signature="59:236578" placeholder="..." />
+                <marker date="1512977700000" expanded="true" signature="98:926" placeholder="..." />
+                <marker date="1512977700000" expanded="true" signature="192:926" placeholder="..." />
+                <marker date="1512977700000" expanded="true" signature="233827:233844" placeholder="..." />
+                <marker date="1512977700000" expanded="true" signature="233827:233862" placeholder="..." />
+                <marker date="1512977700000" expanded="true" signature="233827:233875" placeholder="..." />
+                <marker date="1512977700000" expanded="true" signature="233827:233890" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -2776,7 +2753,8 @@
     <MESSAGE value="恩" />
     <MESSAGE value="拦截器，文件处理器" />
     <MESSAGE value="SSO" />
-    <option name="LAST_COMMIT_MESSAGE" value="SSO" />
+    <MESSAGE value="redis" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2831,15 +2809,15 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="603" column="13" selection-start-line="603" selection-start-column="13" selection-end-line="603" selection-end-column="13" />
+          <caret line="599" column="13" selection-start-line="599" selection-start-column="13" selection-end-line="599" selection-end-column="13" />
           <folding>
-            <marker date="1512977442000" expanded="true" signature="59:236314" placeholder="..." />
-            <marker date="1512977442000" expanded="true" signature="98:926" placeholder="..." />
-            <marker date="1512977442000" expanded="true" signature="192:926" placeholder="..." />
-            <marker date="1512977442000" expanded="true" signature="233563:233580" placeholder="..." />
-            <marker date="1512977442000" expanded="true" signature="233563:233598" placeholder="..." />
-            <marker date="1512977442000" expanded="true" signature="233563:233611" placeholder="..." />
-            <marker date="1512977442000" expanded="true" signature="233563:233626" placeholder="..." />
+            <marker date="1512977700000" expanded="true" signature="59:236578" placeholder="..." />
+            <marker date="1512977700000" expanded="true" signature="98:926" placeholder="..." />
+            <marker date="1512977700000" expanded="true" signature="192:926" placeholder="..." />
+            <marker date="1512977700000" expanded="true" signature="233827:233844" placeholder="..." />
+            <marker date="1512977700000" expanded="true" signature="233827:233862" placeholder="..." />
+            <marker date="1512977700000" expanded="true" signature="233827:233875" placeholder="..." />
+            <marker date="1512977700000" expanded="true" signature="233827:233890" placeholder="..." />
           </folding>
         </state>
       </provider>
