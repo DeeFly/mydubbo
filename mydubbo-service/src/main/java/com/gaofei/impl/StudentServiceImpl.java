@@ -2,6 +2,7 @@ package com.gaofei.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.gaofei.dto.StudentDTO;
+import com.gaofei.exception.MydubboException;
 import com.gaofei.interf.StudentService;
 import com.gaofei.persist.dao.StudentMapper;
 import com.gaofei.persist.domain.StudentDomain;
@@ -9,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -39,6 +41,9 @@ public class StudentServiceImpl implements StudentService {
         StudentDomain studentDomain = new StudentDomain();
         BeanUtils.copyProperties(studentDTO,studentDomain);
         int i = studentMapper.insertStudent(studentDomain);
+        if (studentDTO.getAge() == 33) {
+            throw new MydubboException("运行时异常，看有没有回滚");
+        }
         logger.info("返回主键:{}",studentDomain.getStudentId());
         return studentDomain.getStudentId();
     }
@@ -59,5 +64,17 @@ public class StudentServiceImpl implements StudentService {
         List<StudentDTO> studentDTOList = new LinkedList<StudentDTO>();
         com.gaofei.utils.BeanUtils.copyListBeans(studentDomains,studentDTOList,StudentDomain.class,StudentDTO.class);
         return studentDTOList;
+    }
+
+    @Transactional
+    public int testAdStudent(StudentDTO studentDTO) {
+        StudentDomain studentDomain = new StudentDomain();
+        BeanUtils.copyProperties(studentDTO,studentDomain);
+        int i = studentMapper.insertStudent(studentDomain);
+        if (studentDTO.getAge() == 55) {
+            throw new MydubboException("运行时异常，看有没有回滚");
+        }
+        logger.info("返回主键:{}",studentDomain.getStudentId());
+        return studentDomain.getStudentId();
     }
 }

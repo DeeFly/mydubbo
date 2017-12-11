@@ -12,10 +12,12 @@ import java.lang.reflect.Method;
 /**
  * Created by GaoQingming on 2017/9/8 0008.
  */
+//@Order(9)
 @Component
 @Aspect
 public class MyAopTest {
 
+    //@Pointcut("(execution(* net.xuele..persist..*.*(..))|| execution(* net.xuele..mongo..*.*(..))|| execution(* net.xuele..redis..*.*(..)))")
     @Pointcut("execution(* com.gaofei.web.service..*(..))")
     public void pointCut(){}
 

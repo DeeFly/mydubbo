@@ -40,4 +40,9 @@ public interface StudentService {
     int insertStudent(StudentDTO studentDTO);
 
     List<StudentDTO> selectStudents();
+
+    /**
+     * 测试用注解的事务
+     */
+    int testAdStudent(StudentDTO studentDTO);
 }
