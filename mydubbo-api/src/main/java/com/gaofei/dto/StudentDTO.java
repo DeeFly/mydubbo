@@ -42,4 +42,14 @@ public class StudentDTO implements Serializable {
     public void setAge(int age) {
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "StudentDTO{" +
+                "studentId=" + studentId +
+                ", studentName='" + studentName + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                '}';
+    }
 }

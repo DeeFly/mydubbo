@@ -7,6 +7,8 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+
 /**
  * Created by GaoQingming on 2017/12/11 0011.
  */
@@ -24,6 +26,7 @@ public class RedisTestImplTest extends BaseServiceTestWithoutTransaction {
     public void testAdd() {
         Long result = redisTest.add(10);
         Assert.assertEquals(12L,result.longValue());
+        HashMap map = new HashMap();
     }
 
     @Test

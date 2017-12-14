@@ -7,17 +7,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by yong.zhang on 2017/8/7 0024.
  * 生产消息，消息入队
  */
 @Component
-public class IntegreationLogSendProducer {
+public class GaofeiMqProducer {
 
-    private static final Logger logger = LoggerFactory.getLogger(IntegreationLogSendProducer.class);
+    private static final Logger logger = LoggerFactory.getLogger(GaofeiMqProducer.class);
 
     @Autowired
     private RabbitTemplate rabbitTemplateNoExchange;
-    public void sendDataToCrQueue(Object obj) {
+    public void sendDataToQueue(Object obj) {
         try {
             rabbitTemplateNoExchange.convertAndSend("routeKey", obj);
         } catch (Exception e) {

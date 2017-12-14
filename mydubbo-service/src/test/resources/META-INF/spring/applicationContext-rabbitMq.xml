@@ -12,16 +12,16 @@
                 http://www.springframework.org/schema/rabbit/spring-rabbit-1.0.xsd">
 
     <!-- 连接服务器配置 -->
-    <rabbit:connection-factory id="connectionFactory" host="192.168.1.223"
-                               username="gaofei" password="123456"
-                               port="5672" channel-cache-size="100"/>
+    <rabbit:connection-factory id="connectionFactory" host="${rabbitmq.server.host}"
+                               username="${rabbitmq.server.username}" password="${rabbitmq.server.password}"
+                               port="${rabbitmq.server.port}" channel-cache-size="${channel.size}"/>
 
     <rabbit:admin connection-factory="connectionFactory"/>
 
     <!-- queues队列声明 -->
     <!-- 发送通知队列 发送的时候指定route为下面的name的值，就会发送到指定的队列，然后有它相关联的消费者消费-->
     <!-- id用于和下面的消费者关联，name用于指定路由吧类似这样-->
-    <rabbit:queue id="sendPost" name="routeKey"
+    <rabbit:queue id="sendPost" name="member.userLogin.special_2"
                   durable="true" auto-delete="false" exclusive="false"/>
 
     <!-- 交换机和队列通过routingKey绑定 -->
@@ -29,7 +29,7 @@
     <!--和上面的queue配置有关，下面queue的值必须是上面的queue中的id-->
     <rabbit:direct-exchange id="mqExchange" name="circle" durable="true" auto-delete="false">
         <rabbit:bindings>
-            <rabbit:binding queue="sendPost" key="routeKey"></rabbit:binding>
+            <rabbit:binding queue="sendPost" key="circle.sendPost.special_2"></rabbit:binding>
         </rabbit:bindings>
     </rabbit:direct-exchange>
 

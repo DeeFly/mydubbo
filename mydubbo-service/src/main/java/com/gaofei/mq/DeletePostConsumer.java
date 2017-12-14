@@ -1,5 +1,7 @@
 package com.gaofei.mq;
 
+import com.alibaba.fastjson.JSON;
+import com.gaofei.dto.StudentDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.Message;
@@ -15,6 +17,12 @@ public class DeletePostConsumer implements MessageListener {
 
     public void onMessage(Message message) {
         try {
+            byte[] body = message.getBody();
+            String result = new String(body,0,body.length,"utf-8");
+            System.out.println(result);
+            StudentDTO studentDTO = JSON.parseObject(result,StudentDTO.class);
+            System.out.println(studentDTO.toString());
+            System.out.println("got message!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             //do something
         } catch (Exception e) {
             byte[] bs = message.getBody();
