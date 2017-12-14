@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e590362b-e2da-46bb-ad5e-0f6c135ebd1d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/GaofeiMqProducerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/spring/applicationContext-rabbitMq.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-api/target/classes/com/gaofei/dto/StudentDTO.class" afterPath="$PROJECT_DIR$/mydubbo-api/target/classes/com/gaofei/dto/StudentDTO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/dto/StudentDTO.java" afterPath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/dto/StudentDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/MainTest.java" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/MainTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/mq/DeletePostConsumer.java" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/mq/DeletePostConsumer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-rabbitMq.xml" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-rabbitMq.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/RedisTestImplTest.java" afterPath="$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/RedisTestImplTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/target/test-classes/META-INF/spring/service-test.xml" afterPath="$PROJECT_DIR$/mydubbo-service/target/test-classes/META-INF/spring/service-test.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/mq/IntegreationLogSendProducer.java" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/mq/GaofeiMqProducer.java" />
     </list>
     <ignored path="mydubbo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1130,14 +1122,14 @@
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="653" column="13" selection-start-line="653" selection-start-column="13" selection-end-line="653" selection-end-column="13" />
+              <caret line="657" column="13" selection-start-line="657" selection-start-column="13" selection-end-line="657" selection-end-column="13" />
               <folding>
-                <marker date="1513239012000" expanded="true" signature="59:225931" placeholder="..." />
-                <marker date="1513239012000" expanded="true" signature="98:192" placeholder="..." />
-                <marker date="1513239012000" expanded="true" signature="223180:223197" placeholder="..." />
-                <marker date="1513239012000" expanded="true" signature="223180:223215" placeholder="..." />
-                <marker date="1513239012000" expanded="true" signature="223180:223228" placeholder="..." />
-                <marker date="1513239012000" expanded="true" signature="223180:223243" placeholder="..." />
+                <marker date="1513239146000" expanded="true" signature="59:226680" placeholder="..." />
+                <marker date="1513239146000" expanded="true" signature="98:192" placeholder="..." />
+                <marker date="1513239146000" expanded="true" signature="223929:223946" placeholder="..." />
+                <marker date="1513239146000" expanded="true" signature="223929:223964" placeholder="..." />
+                <marker date="1513239146000" expanded="true" signature="223929:223977" placeholder="..." />
+                <marker date="1513239146000" expanded="true" signature="223929:223992" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -2759,7 +2751,8 @@
     <MESSAGE value="SSO" />
     <MESSAGE value="redis" />
     <MESSAGE value="rabbit mq" />
-    <option name="LAST_COMMIT_MESSAGE" value="rabbit mq" />
+    <MESSAGE value="rabbit mq 测试成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="rabbit mq 测试成功" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
