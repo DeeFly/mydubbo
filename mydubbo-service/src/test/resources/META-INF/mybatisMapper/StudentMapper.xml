@@ -10,18 +10,18 @@
 
     <select id="getStudentById" parameterType="int" resultMap="studentDomain">
         SELECT sid, sage, ssex, sname
-        FROM studentDomain
+        FROM student
         WHERE sid = #{id}
     </select>
     
     <update id="updateStudent" parameterType="int" >
-        UPDATE studentDomain
+        UPDATE student
         SET sage = #{age}
         WHERE sid = #{id}
     </update>
 
     <update id="updateStudentBySex" parameterType="int">
-        UPDATE studentDomain
+        UPDATE student
         SET sage = #{age}
         where ssex = #{sex}
     </update>

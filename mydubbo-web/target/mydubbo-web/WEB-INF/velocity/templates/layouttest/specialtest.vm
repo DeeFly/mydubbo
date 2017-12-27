@@ -1,6 +1,0 @@
-#set($page_title="自定义样式页面")
-##路径开始位置，我理解应该是从给引擎指定的扫描的根目录下
-#set($layout="/layout/speciallayout.vm")
-<div>
-    <p>设置某页面不使用 velocity配置默认的layout.vm模板,好处:不会加载默认样式,可以自定义</p>
-</div>

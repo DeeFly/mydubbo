@@ -1,9 +1,0 @@
-#set($page_title="普通页面")
-<div>
-    <p>显示页面内容,好处:加载默认样式,样式统一控制</p>
-    #if($nowBookList.size() > 0)
-        <span class="current" data-bkid="$!{nowBookList[0].bookId}">$!{nowBookList[0].bookName}</span><i class="iconfont">&#xe923;</i>
-    #else
-        <span class="current" data-bkid="">暂无教材</span><i class="iconfont">&#xe923;</i>
-    #end
-</div>

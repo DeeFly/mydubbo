@@ -93,13 +93,13 @@ public class BroadcastPublisher {
                                 logger.info("发布消息成功，主题[{}]。消息 : [{}]",msg.getTopic(),msg);
                                 redisTemplate.convertAndSend(msg.getTopic(), messageJson);
                             } catch (Exception e) {
-                                logger.error("发送广播失败：", e);
+                                logger.error("发送广播失败", e);
                             }
                         }
                     };
                     executorPool.execute(command);
                 } catch (Exception e) {
-                    logger.error("从sendQueue广播发送通知失败：", e);
+                    logger.error("从sendQueue广播发送通知失败", e);
                 }
             }
         }

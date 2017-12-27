@@ -8,6 +8,7 @@
        xmlns:context="http://www.springframework.org/schema/context">
     <!--事务开启注解-->
     <tx:annotation-driven/>
+    <context:annotation-config/>
     <context:property-placeholder location="classpath:jdbc.properties" ignore-unresolvable="true"/>
 
     <!--配置中心
@@ -22,24 +23,10 @@
         <property name="rootLogLevel" value="${log.service.level}"/>
     </bean>-->
 
-    <context:annotation-config/>
+
 
     <bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource">
         <property name="driverClassName" value="${mysql.driverClassName}"/>
-        <!--  线上环境 -->
-        <!--
-            <property name="url" value="jdbc:mysql://192.168.1.211:3566/xueledb?autoReconnectForPools=true&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true"/>
-            <property name="username" value="rouser"/>
-            <property name="password" value="xl_2015"/>
-        -->
-
-        <!--  测试环境 -->
-        <!--<property name="url" value="jdbc:mysql://192.168.1.76:8066/backgrounddb?autoReconnectForPools=true&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true"/>
-        <property name="username" value="bg_user"/>
-        <property name="password" value="B2gg17u"/>-->
-
-        <!--  开发环境 -->
-        <!--<property name="url" value="${mysql.url}&amp;statementInterceptors=net.xuele.interceptor.mysql.MySQLClientFilter"/>-->
         <property name="url" value="${mysql.url}"/>
         <property name="username" value="${mysql.username}"/>
         <property name="password" value="${mysql.password}"/>
@@ -49,20 +36,15 @@
         <property name="minIdle" value="${mysql.minIdle}"/>
         <property name="timeBetweenEvictionRunsMillis" value="${mysql.timeBetweenEvictionRunsMillis}"/>
         <property name="minEvictableIdleTimeMillis" value="${mysql.minEvictableIdleTimeMillis}"/>
-
-
         <property name="validationQuery" value="${mysql.validationQuery}"/>
         <property name="testOnBorrow" value="${mysql.testOnBorrow}"/>
         <property name="testWhileIdle" value="${mysql.testWhileIdle}"/>
         <property name="validationInterval" value="${mysql.validationInterval}"/>
         <property name="validationQueryTimeout" value="${mysql.validationQueryTimeout}"/>
-
         <property name="removeAbandoned" value="${mysql.removeAbandoned}"/>
         <property name="removeAbandonedTimeout" value="${mysql.removeAbandonedTimeout}"/>
         <property name="logAbandoned" value="${mysql.logAbandoned}"/>
-
         <property name="defaultTransactionIsolation" value="${mysql.defaultTransactionIsolation}"/>
-
     </bean>
 
     <!--这里最好指定为单利，否则可能报错

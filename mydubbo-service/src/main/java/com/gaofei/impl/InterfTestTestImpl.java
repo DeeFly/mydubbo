@@ -17,6 +17,7 @@ public class InterfTestTestImpl implements InterfTest {
     private StudentMapper studentMapper;
 
     public int updateStudent(int id, int age, int fail) throws Exception {
+        //RpcContext.getContext().getAttachments();
         int i = studentMapper.updateStudent(id,age);
         System.out.println("after mapper update : " + i);
         if(fail == 1) {
