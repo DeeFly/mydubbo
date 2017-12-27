@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e590362b-e2da-46bb-ad5e-0f6c135ebd1d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/impl/InterfTestTestImpl.class" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/impl/InterfTestTestImpl.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/jdbc.properties" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/META-INF/mybatisMapper/StudentMapper.xml" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/META-INF/mybatisMapper/StudentMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-mybatis.xml" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-mybatis.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/META-INF/spring/applicationContext-mybatis.xml" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/META-INF/spring/applicationContext-mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/target/test-classes/META-INF/spring/applicationContext-mybatis.xml" afterPath="$PROJECT_DIR$/mydubbo-service/target/test-classes/META-INF/spring/applicationContext-mybatis.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/target/test-classes/META-INF/mybatisMapper/StudentMapper.xml" afterPath="$PROJECT_DIR$/mydubbo-service/target/test-classes/META-INF/mybatisMapper/StudentMapper.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/mydubbo-service/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/resources/jdbcPro.properties" />
     </list>
     <ignored path="mydubbo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -273,8 +274,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/jdbc.properties">
+      <file leaf-file-name="jdbcPro.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/jdbcPro.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
@@ -297,7 +298,7 @@
         <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/spring/applicationContext-mybatis.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-6.617647">
-              <caret line="9" column="73" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
+              <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
               <folding>
                 <element signature="e#1624#1650#0" expanded="true" />
                 <element signature="e#2499#2513#0" expanded="true" />
@@ -323,15 +324,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext-mybatis.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="applicationContext-mybatis.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-mybatis.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.125">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.43021032">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding>
-                <element signature="e#1666#1692#0" expanded="true" />
-                <element signature="e#1730#1744#0" expanded="true" />
-                <element signature="e#1787#1806#0" expanded="true" />
+                <element signature="e#1669#1695#0" expanded="true" />
+                <element signature="e#1733#1747#0" expanded="true" />
+                <element signature="e#1790#1809#0" expanded="true" />
+                <element signature="e#1852#1871#0" expanded="true" />
+                <element signature="e#1917#1939#0" expanded="true" />
+                <element signature="e#1983#2003#0" expanded="true" />
+                <element signature="e#2045#2063#0" expanded="true" />
+                <element signature="e#2105#2123#0" expanded="true" />
+                <element signature="e#2187#2227#0" expanded="true" />
+                <element signature="e#2288#2325#0" expanded="true" />
+                <element signature="e#2375#2401#0" expanded="true" />
+                <element signature="e#2448#2471#0" expanded="true" />
+                <element signature="e#2519#2543#0" expanded="true" />
+                <element signature="e#2596#2625#0" expanded="true" />
+                <element signature="e#2682#2715#0" expanded="true" />
+                <element signature="e#2765#2791#0" expanded="true" />
+                <element signature="e#2848#2881#0" expanded="true" />
+                <element signature="e#2928#2951#0" expanded="true" />
+                <element signature="e#3013#3051#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -380,10 +397,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentMapper.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StudentMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/mybatisMapper/StudentMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.039783">
+            <state vertical-scroll-proportion="-16.911764">
               <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
               <folding>
                 <marker date="1514344564000" expanded="true" signature="684:760" placeholder="SELECT sid, student" />
@@ -972,15 +989,15 @@
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="285" column="13" selection-start-line="285" selection-start-column="13" selection-end-line="285" selection-end-column="13" />
+              <caret line="149" column="13" selection-start-line="149" selection-start-column="13" selection-end-line="149" selection-end-column="13" />
               <folding>
-                <marker date="1514344586000" expanded="true" signature="59:209895" placeholder="..." />
-                <marker date="1514344586000" expanded="true" signature="98:214" placeholder="..." />
-                <marker date="1514344586000" expanded="true" signature="192:214" placeholder="..." />
-                <marker date="1514344586000" expanded="true" signature="207144:207161" placeholder="..." />
-                <marker date="1514344586000" expanded="true" signature="207144:207179" placeholder="..." />
-                <marker date="1514344586000" expanded="true" signature="207144:207192" placeholder="..." />
-                <marker date="1514344586000" expanded="true" signature="207144:207207" placeholder="..." />
+                <marker date="1514344796000" expanded="true" signature="59:191521" placeholder="..." />
+                <marker date="1514344796000" expanded="true" signature="98:214" placeholder="..." />
+                <marker date="1514344796000" expanded="true" signature="192:214" placeholder="..." />
+                <marker date="1514344796000" expanded="true" signature="188770:188787" placeholder="..." />
+                <marker date="1514344796000" expanded="true" signature="188770:188805" placeholder="..." />
+                <marker date="1514344796000" expanded="true" signature="188770:188818" placeholder="..." />
+                <marker date="1514344796000" expanded="true" signature="188770:188833" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -1200,9 +1217,9 @@
         <option value="$PROJECT_DIR$/mydubbo-service/src/main/java/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/spring/applicationContext-mybatis.xml" />
         <option value="$PROJECT_DIR$/mydubbo-service/pom.xml" />
-        <option value="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-mybatis.xml" />
         <option value="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/StudentMapper.xml" />
         <option value="$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/mybatisMapper/StudentMapper.xml" />
+        <option value="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-mybatis.xml" />
       </list>
     </option>
   </component>
@@ -1794,10 +1811,6 @@
               <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybatisMapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1896,7 +1909,7 @@
       <recent name="E:\workspace\mydubbo\mydubbo-web\src\main\webapp\WEB-INF\velocity\template" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InterfTestTest.testGetStudentById">
+  <component name="RunManager" selected="Application.mydubbo-service">
     <configuration default="false" name="InterfTestTest.testGetStudentById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mydubbo-service" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -2201,9 +2214,6 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TestHistory">
-    <history-entry file="GaofeiMqProducerTest_testSendDataToQueue - 2017.12.14 at 16h 11m 13s.xml">
-      <configuration name="GaofeiMqProducerTest.testSendDataToQueue" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="InterfTestTest_testGetStudentById - 2017.12.27 at 11h 00m 08s.xml">
       <configuration name="InterfTestTest.testGetStudentById" configurationId="JUnit" />
     </history-entry>
@@ -2217,6 +2227,9 @@
       <configuration name="InterfTestTest.testGetStudentById" configurationId="JUnit" />
     </history-entry>
     <history-entry file="InterfTestTest_testGetStudentById - 2017.12.27 at 11h 14m 59s.xml">
+      <configuration name="InterfTestTest.testGetStudentById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InterfTestTest_testGetStudentById - 2017.12.27 at 11h 17m 32s.xml">
       <configuration name="InterfTestTest.testGetStudentById" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RedisTestImplTest_testHashTest - 2017.12.11 at 13h 53m 51s.xml">
@@ -3075,7 +3088,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/jdbc.properties">
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/jdbcPro.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
@@ -3088,46 +3101,6 @@
         <state vertical-scroll-proportion="-28.558823">
           <caret line="165" column="118" selection-start-line="165" selection-start-column="118" selection-end-line="165" selection-end-column="118" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.125">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-          <folding>
-            <element signature="e#1666#1692#0" expanded="true" />
-            <element signature="e#1730#1744#0" expanded="true" />
-            <element signature="e#1787#1806#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/spring/applicationContext-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.617647">
-          <caret line="9" column="73" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
-          <folding>
-            <element signature="e#1624#1650#0" expanded="true" />
-            <element signature="e#2499#2513#0" expanded="true" />
-            <element signature="e#2556#2575#0" expanded="true" />
-            <element signature="e#2618#2637#0" expanded="true" />
-            <element signature="e#2683#2705#0" expanded="true" />
-            <element signature="e#2749#2769#0" expanded="true" />
-            <element signature="e#2811#2829#0" expanded="true" />
-            <element signature="e#2871#2889#0" expanded="true" />
-            <element signature="e#2953#2993#0" expanded="true" />
-            <element signature="e#3054#3091#0" expanded="true" />
-            <element signature="e#3143#3169#0" expanded="true" />
-            <element signature="e#3216#3239#0" expanded="true" />
-            <element signature="e#3287#3311#0" expanded="true" />
-            <element signature="e#3364#3393#0" expanded="true" />
-            <element signature="e#3450#3483#0" expanded="true" />
-            <element signature="e#3534#3560#0" expanded="true" />
-            <element signature="e#3617#3650#0" expanded="true" />
-            <element signature="e#3697#3720#0" expanded="true" />
-            <element signature="e#3783#3821#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3177,14 +3150,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/InterfTestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/util/Pool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3195,12 +3160,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/mybatisMapper/StudentMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.039783">
+        <state vertical-scroll-proportion="-16.911764">
           <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
           <folding>
             <marker date="1514344564000" expanded="true" signature="684:760" placeholder="SELECT sid, student" />
             <marker date="1514344564000" expanded="true" signature="841:907" placeholder="UPDATE stude... " />
             <marker date="1514344564000" expanded="true" signature="988:1056" placeholder="UPDATE stude... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/InterfTestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/spring/applicationContext-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.617647">
+          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+          <folding>
+            <element signature="e#1624#1650#0" expanded="true" />
+            <element signature="e#2499#2513#0" expanded="true" />
+            <element signature="e#2556#2575#0" expanded="true" />
+            <element signature="e#2618#2637#0" expanded="true" />
+            <element signature="e#2683#2705#0" expanded="true" />
+            <element signature="e#2749#2769#0" expanded="true" />
+            <element signature="e#2811#2829#0" expanded="true" />
+            <element signature="e#2871#2889#0" expanded="true" />
+            <element signature="e#2953#2993#0" expanded="true" />
+            <element signature="e#3054#3091#0" expanded="true" />
+            <element signature="e#3143#3169#0" expanded="true" />
+            <element signature="e#3216#3239#0" expanded="true" />
+            <element signature="e#3287#3311#0" expanded="true" />
+            <element signature="e#3364#3393#0" expanded="true" />
+            <element signature="e#3450#3483#0" expanded="true" />
+            <element signature="e#3534#3560#0" expanded="true" />
+            <element signature="e#3617#3650#0" expanded="true" />
+            <element signature="e#3697#3720#0" expanded="true" />
+            <element signature="e#3783#3821#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43021032">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="e#1669#1695#0" expanded="true" />
+            <element signature="e#1733#1747#0" expanded="true" />
+            <element signature="e#1790#1809#0" expanded="true" />
+            <element signature="e#1852#1871#0" expanded="true" />
+            <element signature="e#1917#1939#0" expanded="true" />
+            <element signature="e#1983#2003#0" expanded="true" />
+            <element signature="e#2045#2063#0" expanded="true" />
+            <element signature="e#2105#2123#0" expanded="true" />
+            <element signature="e#2187#2227#0" expanded="true" />
+            <element signature="e#2288#2325#0" expanded="true" />
+            <element signature="e#2375#2401#0" expanded="true" />
+            <element signature="e#2448#2471#0" expanded="true" />
+            <element signature="e#2519#2543#0" expanded="true" />
+            <element signature="e#2596#2625#0" expanded="true" />
+            <element signature="e#2682#2715#0" expanded="true" />
+            <element signature="e#2765#2791#0" expanded="true" />
+            <element signature="e#2848#2881#0" expanded="true" />
+            <element signature="e#2928#2951#0" expanded="true" />
+            <element signature="e#3013#3051#0" expanded="true" />
           </folding>
         </state>
       </provider>
