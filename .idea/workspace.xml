@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e590362b-e2da-46bb-ad5e-0f6c135ebd1d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/java/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-dubbo-service.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/controller/testController/DubboTestController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/controller/testController/ExceptonHandlerTestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/interf/RedisTest.java" afterPath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/interf/RedisTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/mydubbo-service.iml" afterPath="$PROJECT_DIR$/mydubbo-service/mydubbo-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/pom.xml" afterPath="$PROJECT_DIR$/mydubbo-service/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/RedisTestImpl.java" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/RedisTestImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-mybatis.xml" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-redis.xml" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-redis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/mydubbo-demo-provider.xml" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/mydubbo-demo-provider.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/RedisTestImplTest.java" afterPath="$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/RedisTestImplTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/META-INF/spring/applicationContext-mybatis.xml" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/META-INF/spring/applicationContext-mybatis.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/META-INF/spring/mydubbo-demo-provider.xml" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/META-INF/spring/mydubbo-demo-provider.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/controller/MVCContrller.java" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/controller/MVCContrller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/exception/DefaultExceptionHandler.java" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/exception/DefaultExceptionHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/interceptor/AddAttributeInterceptor.java" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/interceptor/AddAttributeInterceptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydubbo-web/src/main/resources/META-INF/spring/dubbo-demo-consumer.xml" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/resources/META-INF/spring/dubbo-demo-consumer.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-rabbitMq.xml" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/resources/applicationContext-rabbitMq.xml" />
     </list>
     <ignored path="mydubbo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1559,52 +1541,52 @@
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="450" column="13" selection-start-line="450" selection-start-column="13" selection-end-line="450" selection-end-column="13" />
+              <caret line="454" column="13" selection-start-line="454" selection-start-column="13" selection-end-line="454" selection-end-column="13" />
               <folding>
-                <marker date="1515119726000" expanded="true" signature="59:264983" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="98:254" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="192:254" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="262264:262281" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="262264:262299" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="262264:262312" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="262264:262327" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="262362:264972" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="262375:264957" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="262429:262816" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="262448:262801" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="262564:262781" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="262604:262747" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="262625:262725" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="262866:263172" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="262885:263157" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="262959:263137" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="262999:263103" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="263020:263081" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="263223:263488" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="263242:263473" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="263275:263453" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="263315:263419" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="263336:263397" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="263531:263837" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="263550:263822" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="263624:263802" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="263664:263768" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="263685:263746" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="263888:264213" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="263907:264198" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="264000:264178" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="264040:264144" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="264061:264122" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="264248:264554" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="264267:264539" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="264341:264519" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="264381:264485" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="264402:264463" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="264606:264943" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="264625:264928" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="264730:264908" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="264770:264874" placeholder="..." />
-                <marker date="1515119726000" expanded="true" signature="264791:264852" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="59:265588" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="98:214" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="192:214" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="262869:262886" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="262869:262904" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="262869:262917" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="262869:262932" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="262967:265577" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="262980:265562" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="263034:263421" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="263053:263406" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="263169:263386" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="263209:263352" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="263230:263330" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="263471:263777" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="263490:263762" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="263564:263742" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="263604:263708" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="263625:263686" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="263828:264093" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="263847:264078" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="263880:264058" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="263920:264024" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="263941:264002" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="264136:264442" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="264155:264427" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="264229:264407" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="264269:264373" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="264290:264351" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="264493:264818" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="264512:264803" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="264605:264783" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="264645:264749" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="264666:264727" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="264853:265159" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="264872:265144" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="264946:265124" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="264986:265090" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="265007:265068" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="265211:265548" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="265230:265533" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="265335:265513" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="265375:265479" placeholder="..." />
+                <marker date="1515119918000" expanded="true" signature="265396:265457" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -3027,7 +3009,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47276688" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32897604" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32897604" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897604" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -3064,7 +3046,8 @@
     <MESSAGE value="rabbit mq" />
     <MESSAGE value="rabbit mq 测试成功" />
     <MESSAGE value="gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
+    <MESSAGE value="dubbo超时，header" />
+    <option name="LAST_COMMIT_MESSAGE" value="dubbo超时，header" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
