@@ -25,6 +25,8 @@ public class DefaultExceptionHandler implements HandlerExceptionResolver, Priori
     //
     public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object o, Exception e) {
         logger.error("系统出错url:{},params:{},userHost:{}",request.getRequestURL(),request.getParameterMap(),request.getRemoteHost(),e);
+        response.setHeader("exceptionHandler","addValue");
+        response.setHeader("content-code","105");
         if(isAjax(request)) {
             ModelAndView modelAndView = new ModelAndView();
             /*  使用response返回    */

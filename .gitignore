@@ -1,4 +1,5 @@
-.idea/*
+﻿.idea/*
+.idea
 target
 build
 db

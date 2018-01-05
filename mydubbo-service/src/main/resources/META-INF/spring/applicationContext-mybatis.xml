@@ -9,7 +9,8 @@
     <!--事务开启注解-->
     <tx:annotation-driven/>
     <context:annotation-config/>
-    <context:property-placeholder location="classpath:jdbcPro.properties" ignore-unresolvable="true"/>
+    <!--注意 property-placeholder只能配置一个，spring加载时只会根据一个holder来给所有的占位符替换，如果在每个xml中都配置了不同的holder读取不同的properites，则有些会找不到-->
+    <context:property-placeholder location="classpath:jdbcPro.properties,classpath*:redis.properties" ignore-unresolvable="true"/>
 
     <!--配置中心
     <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">

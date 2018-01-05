@@ -21,14 +21,19 @@ public class AddAttributeInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
         httpServletRequest.setCharacterEncoding("UTF-8");
         httpServletRequest.setAttribute("preHandler","preHandlerTest");
+        //下面两行有没有异常都生效
+        httpServletResponse.setHeader("preHandle","preHandle");
+        httpServletResponse.setHeader("content-code","100");
         return true;
     }
 
     public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
-
+        //奇怪，为什么这里设置的不生效，有没有异常都无效
+        httpServletResponse.addHeader("postHandle","postHandle");
     }
 
     public void afterCompletion(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) throws Exception {
-
+        //奇怪，下面这一样只在抛出异常时有效
+        httpServletResponse.addHeader("afterCompletion","afterCompletion");
     }
 }

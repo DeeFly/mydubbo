@@ -33,8 +33,8 @@ public class MVCContrller {
     @RequestMapping("handlerTest")
     @ResponseBody
     public String handlerTest(HttpServletRequest request) {
-        System.out.println("?");
         String s = (String)request.getAttribute("preHandler");
+        logger.info(s);
         return s;
     }
 
