@@ -8,6 +8,7 @@ import java.util.List;
  * Created by GaoQingming on 2017/11/9 0009.
  */
 public class BeanUtils {
+    //可用
     public static void copyListBeans(List sourceList,List targetList,Class sourceType,Class targetType) {
         if (CollectionUtils.isEmpty(sourceList)) {
             return ;
