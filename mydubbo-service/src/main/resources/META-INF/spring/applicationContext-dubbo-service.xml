@@ -8,6 +8,7 @@
 	   http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <!--配置下面的东西时，id和ref是什么好像并不重要，只是有时候需要重启两次才能生效，应该是注册的缓存没有清理干净-->
+    <!--可能也比较重要，配置service的时候，ref是必须的，所以也必须配置一个id与之相对应 -->
     <bean class="com.gaofei.impl.RedisTestImpl" id="xxaaredisTest"/>
     <dubbo:service ref="xxaaredisTest" interface="com.gaofei.interf.RedisTest">
         <dubbo:method name="set" timeout="15000"></dubbo:method>
