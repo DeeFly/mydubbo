@@ -27,6 +27,7 @@
     <!--<dubbo:protocol name="dubbo" port="20880" serialization="kryo" optimizer="com.xyj.SerializationOptimizerImpl"/>-->
     <dubbo:protocol name="dubbo" port="20880" />
 
-    <dubbo:annotation package="com.gaofei.impl"/>
+    <!--扫描包可以用逗号分隔-->
+    <dubbo:annotation package="com.gaofei.impl,com.gaofei.broadcast.usecase"/>
 
 </beans>

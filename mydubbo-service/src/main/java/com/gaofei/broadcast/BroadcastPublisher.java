@@ -64,9 +64,9 @@ public class BroadcastPublisher {
             poolConfig.setTestOnBorrow(true);
             poolConfig.setTestOnReturn(true);
             localFactory = new JedisConnectionFactory(poolConfig);
-            localFactory.setHostName("cache.broadcast.infra.middleware.xueleyun.com");
+            localFactory.setHostName("192.168.1.223");
             localFactory.setPort(6379);
-            localFactory.setPassword("");
+            localFactory.setPassword("123456");
             localFactory.setTimeout(10000);
             localFactory.afterPropertiesSet();
             try {

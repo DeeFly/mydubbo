@@ -2,7 +2,15 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/applicationContext-mybatis.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/applicationContext-redis.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/applicationContext-rabbitMq.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/mydubbo-demo-provider.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/applicationContext-dubbo-service.xml</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">

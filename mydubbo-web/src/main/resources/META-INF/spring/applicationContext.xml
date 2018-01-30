@@ -40,7 +40,9 @@
     <!--通过配置文件方式给属性设值    冒号后面可以跟默认值，就是如果没有从配置文件中找到，就用冒号后面的值给属性注入-->
     <bean id="urlConstant" class="com.gaofei.web.constant.UrlConstant">
         <property name="serviceUrl" value="ceshiurl"/>
+        <property name="stringValue" value="${mysql.jdbc.url}"/>
         <property name="jdbcUrl" value="${mysql.jdbc.urlwwww:morenzhiceshi}"/>
+        <property name="testPostConstruct" ref="testPostConstruct"/>
     </bean>
 
     <!--restTempplate 配置，这个没有试验过interceptors-->

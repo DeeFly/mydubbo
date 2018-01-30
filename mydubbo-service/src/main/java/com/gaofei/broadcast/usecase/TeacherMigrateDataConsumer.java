@@ -3,6 +3,7 @@ package com.gaofei.broadcast.usecase;
 
 import com.gaofei.broadcast.BroadcastConsumer;
 import com.gaofei.broadcast.XueleMessage;
+import com.gaofei.broadcast.XueleMessageConstants;
 import com.gaofei.broadcast.XueleMessageListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,10 +21,11 @@ public class TeacherMigrateDataConsumer implements XueleMessageListener {
 
     @PostConstruct
     public void init() {
-        BroadcastConsumer.subscriberOnce("topicName", this);
+        BroadcastConsumer.subscriberOnce(XueleMessageConstants.TOPIC_TEACH_ACTION, this);
     }
 
     public void handleMessage(XueleMessage xueleMessage) {
+        logger.info("here it come!");
         //do someThing
     }
 

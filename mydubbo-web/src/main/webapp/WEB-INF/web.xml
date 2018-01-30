@@ -4,10 +4,7 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  <context-param>
-    <param-name>contextConfigLocation</param-name>
-    <param-value>classpath:META-INF/spring/*.xml</param-value>
-  </context-param>
+
 
   <!--SSO测试，单点登录-->
   <!--<filter>-->
@@ -43,6 +40,11 @@
     <!--<filter-name>delegatingFilter</filter-name>-->
     <!--<url-pattern>/*</url-pattern>-->
   <!--</filter-mapping>-->
+
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:META-INF/spring/*.xml</param-value>
+  </context-param>
 
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
