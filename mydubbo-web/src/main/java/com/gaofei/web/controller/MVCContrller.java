@@ -34,7 +34,10 @@ public class MVCContrller {
     @ResponseBody
     public String handlerTest(HttpServletRequest request) {
         String s = (String)request.getAttribute("preHandler");
+        logger.trace(s);
         logger.info(s);
+        logger.warn(s);
+        logger.error(s);
         return s;
     }
 
