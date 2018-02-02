@@ -15,6 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 成功了，只是没有容错处理，可以检测到修改，并修改日志级别
+ * 如果是superDiamond 的配置, 实现ConfigurationListener
  * Created by GaoQingming on 2018/2/2 0002.
  */
 @Component
@@ -36,6 +37,8 @@ public class UpdateLoggerLevel implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
+        //superDiamond 添加监听
+        //PropertiesConfigurationFactoryBean.getPropertiesConfiguration().addConfigurationListener(this);
         loadProperties();
         scheduledThreadPool.scheduleAtFixedRate(new Runnable() {
             @Override
@@ -53,6 +56,7 @@ public class UpdateLoggerLevel implements InitializingBean {
             while ((temp = bf.readLine()) != null) {
                 if (temp.startsWith("logger.level")) {
                     tempLevel = temp.substring(temp.indexOf("=") + 1).trim();
+                    //日志写成error级别是因为测试时会修改error级别，想看到每次修改的效果
                     logger.error("检测到的值为:{}",tempLevel);
                     if (!tempLevel.equals(getRootLogLevel())) {
                         setRootLogLevel(tempLevel);
@@ -69,6 +73,10 @@ public class UpdateLoggerLevel implements InitializingBean {
         logger.error("detectChange...");
         loadProperties();
     }
+
+    //@Override superDiamond 检测到配置修改后的事件
+    //public void configurationChanged(ConfigurationEvent event) {
+    //}
 
     public String getRootLogLevel() {
         return rootLogLevel;
