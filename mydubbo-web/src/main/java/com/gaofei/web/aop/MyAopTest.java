@@ -17,6 +17,10 @@ import java.lang.reflect.Method;
 @Aspect
 public class MyAopTest {
 
+    //args 使用参数
+    //@Before("execution(* net.xuele.exercisesBank.service.impl.update.FeedbackSubmitter.saveFeedback(..)) && args(feedback)")
+    //public void fillFeedback(QuestFeedbackInsertParam feedback) {
+
     //@Pointcut("(execution(* net.xuele..persist..*.*(..))|| execution(* net.xuele..mongo..*.*(..))|| execution(* net.xuele..redis..*.*(..)))")
     @Pointcut("execution(* com.gaofei.web.service..*(..))")
     public void pointCut(){}

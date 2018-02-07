@@ -9,9 +9,9 @@ import java.util.List;
  */
 public class BeanUtils {
     //可用
-    public static void copyListBeans(List sourceList,List targetList,Class sourceType,Class targetType) {
+    public static List copyListBeans(List sourceList,List targetList,Class sourceType,Class targetType) {
         if (CollectionUtils.isEmpty(sourceList)) {
-            return ;
+            return null;
         }
         try {
             for (Object source : sourceList) {
@@ -24,5 +24,6 @@ public class BeanUtils {
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
+        return targetList;
     }
 }

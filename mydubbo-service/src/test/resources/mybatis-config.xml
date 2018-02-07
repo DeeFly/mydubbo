@@ -13,6 +13,7 @@
 
     <mappers>
         <mapper resource="META-INF/mybatisMapper/StudentMapper.xml" />
+        <mapper resource="META-INF/mybatisMapper/SCMapper.xml"/>
     </mappers>
 
 

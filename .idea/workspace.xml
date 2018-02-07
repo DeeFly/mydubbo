@@ -7,12 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e590362b-e2da-46bb-ad5e-0f6c135ebd1d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/logger/UpdateLoggerLevel.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/resources/properties/updateLogger.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/dto/SCDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/interf/SCService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/BaseRequest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/SCRequest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/SCServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/dao/SCMapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/domain/SCDomain.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/SCMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/SCServiceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/mybatisMapper/SCMapper.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/logback/web/faofeiweb.log" afterPath="$PROJECT_DIR$/logback/web/faofeiweb.log" />
-      <change beforePath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/controller/MVCContrller.java" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/controller/MVCContrller.java" />
+      <change beforePath="$PROJECT_DIR$/mydubbo-api/mydubbo-api.iml" afterPath="$PROJECT_DIR$/mydubbo-api/mydubbo-api.iml" />
+      <change beforePath="$PROJECT_DIR$/mydubbo-api/pom.xml" afterPath="$PROJECT_DIR$/mydubbo-api/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/mydubbo-service/mydubbo-service.iml" afterPath="$PROJECT_DIR$/mydubbo-service/mydubbo-service.iml" />
+      <change beforePath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/utils/BeanUtils.java" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/utils/BeanUtils.java" />
+      <change beforePath="$PROJECT_DIR$/mydubbo-service/src/main/resources/mybatis-config.xml" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/resources/mybatis-config.xml" />
+      <change beforePath="$PROJECT_DIR$/mydubbo-service/src/test/resources/mybatis-config.xml" afterPath="$PROJECT_DIR$/mydubbo-service/src/test/resources/mybatis-config.xml" />
+      <change beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/impl/StudentServiceImpl.class" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/impl/StudentServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/utils/BeanUtils.class" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/utils/BeanUtils.class" />
+      <change beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/mybatis-config.xml" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/mybatis-config.xml" />
+      <change beforePath="$PROJECT_DIR$/mydubbo-service/target/test-classes/mybatis-config.xml" afterPath="$PROJECT_DIR$/mydubbo-service/target/test-classes/mybatis-config.xml" />
+      <change beforePath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/aop/MyAopTest.java" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/aop/MyAopTest.java" />
     </list>
     <ignored path="mydubbo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,69 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractBeanFactory.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3000">
-              <caret line="195" column="18" lean-forward="false" selection-start-line="195" selection-start-column="18" selection-end-line="195" selection-end-column="18" />
-              <folding>
-                <element signature="e#13002#13545#0" expanded="true" />
-                <element signature="e#13544#13545#0" expanded="true" />
-                <element signature="e#26842#26843#0" expanded="true" />
-                <element signature="e#26952#26953#0" expanded="true" />
-                <element signature="e#27904#27905#0" expanded="true" />
-                <element signature="e#27940#27941#0" expanded="true" />
-                <element signature="e#31060#31061#0" expanded="true" />
-                <element signature="e#31097#31098#0" expanded="true" />
-                <element signature="e#31422#31423#0" expanded="true" />
-                <element signature="e#31480#31481#0" expanded="true" />
-                <element signature="e#48848#48849#0" expanded="true" />
-                <element signature="e#48898#48899#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DisposableBeanAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/DisposableBeanAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2625">
-              <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Service.java" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.8.4/dubbo-2.8.4-sources.jar!/com/alibaba/dubbo/config/annotation/Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="126">
               <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractBeanDefinition.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanDefinition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19850">
-              <caret line="943" column="0" lean-forward="false" selection-start-line="943" selection-start-column="0" selection-end-line="943" selection-end-column="0" />
-              <folding>
-                <element signature="e#24820#24821#0" expanded="true" />
-                <element signature="e#24853#24854#0" expanded="true" />
-                <element signature="e#26586#26587#0" expanded="true" />
-                <element signature="e#26614#26615#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mydubbo-web/src/main/resources/META-INF/spring/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1075">
-              <caret line="43" column="78" lean-forward="false" selection-start-line="43" selection-start-column="78" selection-end-line="43" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -147,193 +105,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanUtils.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/BeanUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2725">
-              <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggerFactory.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12-sources.jar!/org/slf4j/LoggerFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6850">
-              <caret line="312" column="0" lean-forward="false" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggerFactory.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar!/org/slf4j/LoggerFactory.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4825">
-              <caret line="210" column="0" lean-forward="false" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
-              <folding>
-                <marker date="1496208714000" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1496208714000" expanded="false" signature="133:542" ph="..." />
-                <marker date="1496208714000" expanded="true" signature="2366:2373" ph="{}" />
-                <marker date="1496208714000" expanded="true" signature="2399:2494" ph="{...}" />
-                <marker date="1496208714000" expanded="true" signature="2550:2659" ph="{...}" />
-                <marker date="1496208714000" expanded="true" signature="2746:3010" ph="{...}" />
-                <marker date="1496208714000" expanded="true" signature="3049:4651" ph="{...}" />
-                <marker date="1496208714000" expanded="true" signature="4696:4806" ph="{...}" />
-                <marker date="1496208714000" expanded="true" signature="4862:5733" ph="{...}" />
-                <marker date="1496208714000" expanded="true" signature="5786:6629" ph="{...}" />
-                <marker date="1496208714000" expanded="true" signature="6699:7496" ph="{...}" />
-                <marker date="1496208714000" expanded="false" signature="7597:7608" ph=" { " />
-                <marker date="1496208714000" expanded="false" signature="7652:7658" ph=" }" />
-                <marker date="1496208714000" expanded="true" signature="7751:8262" ph="{...}" />
-                <marker date="1496208714000" expanded="true" signature="8344:8566" ph="{...}" />
-                <marker date="1496208714000" expanded="true" signature="8616:8731" ph="{...}" />
-                <marker date="1496208714000" expanded="true" signature="8784:9358" ph="{...}" />
-                <marker date="1496208714000" expanded="false" signature="9456:9467" ph=" { " />
-                <marker date="1496208714000" expanded="false" signature="9524:9530" ph=" }" />
-                <marker date="1496208714000" expanded="true" signature="9585:10230" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractAdvisorAutoProxyCreator.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AbstractAdvisorAutoProxyCreator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1225">
-              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-              <folding>
-                <element signature="e#3788#3789#0" expanded="true" />
-                <element signature="e#3848#3849#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AspectJAwareAdvisorAutoProxyCreator.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/aspectj/autoproxy/AspectJAwareAdvisorAutoProxyCreator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1325">
-              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-              <folding>
-                <element signature="e#2875#2909#0" expanded="true" />
-                <element signature="e#3254#3263#0" expanded="true" />
-                <element signature="e#3761#3762#0" expanded="true" />
-                <element signature="e#3846#3847#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AspectJProxyUtils.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/aspectj/AspectJProxyUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProxyCreationContext.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/ProxyCreationContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BeanFactoryAdvisorRetrievalHelper.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/BeanFactoryAdvisorRetrievalHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1325">
-              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReferenceConfig.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.8.4/dubbo-2.8.4-sources.jar!/com/alibaba/dubbo/config/ReferenceConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11025">
-              <caret line="511" column="0" lean-forward="false" selection-start-line="511" selection-start-column="0" selection-end-line="511" selection-end-column="0" />
-              <folding>
-                <element signature="e#19682#19683#0" expanded="true" />
-                <element signature="e#19738#19739#0" expanded="true" />
-                <element signature="e#19778#19779#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractAutoProxyCreator.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5825">
-              <caret line="297" column="0" lean-forward="false" selection-start-line="297" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
-              <folding>
-                <element signature="e#10782#10783#0" expanded="true" />
-                <element signature="e#10800#10801#0" expanded="true" />
-                <element signature="e#11052#11053#0" expanded="true" />
-                <element signature="e#11070#11071#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProxyFactory.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ProxyFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2175">
-              <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-              <folding>
-                <element signature="e#3743#3744#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProxyCreatorSupport.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ProxyCreatorSupport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2075">
-              <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-              <folding>
-                <element signature="e#2255#2256#0" expanded="true" />
-                <element signature="e#2289#2290#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultAopProxyFactory.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/DefaultAopProxyFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CglibAopProxy.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3775">
-              <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-              <folding>
-                <element signature="e#4035#4054#0" expanded="true" />
-                <element signature="e#9239#9240#0" expanded="true" />
-                <element signature="e#9267#9268#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ObjenesisCglibAopProxy.java" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ObjenesisCglibAopProxy.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -343,16 +114,6 @@
                 <element signature="e#1604#1605#0" expanded="true" />
                 <element signature="e#1624#1625#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpringObjenesis.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.8.RELEASE/spring-core-4.2.8.RELEASE-sources.jar!/org/springframework/objenesis/SpringObjenesis.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1975">
-              <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -561,18 +322,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProxyProcessorSupport.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ProxyProcessorSupport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1375">
-              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding>
-                <element signature="e#2796#2797#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SLF4JLocationAwareLog.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar!/org/apache/commons/logging/impl/SLF4JLocationAwareLog.class">
           <provider selected="true" editor-type-id="text-editor">
@@ -686,16 +435,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnnotationAwareAspectJAutoProxyCreator.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/aspectj/annotation/AnnotationAwareAspectJAutoProxyCreator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1625">
-              <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BeanFactoryAspectJAdvisorsBuilder.java" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/aspectj/annotation/BeanFactoryAspectJAdvisorsBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -703,20 +442,6 @@
               <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
               <folding>
                 <element signature="e#5068#5077#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractAspectJAdvisorFactory.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/aspectj/annotation/AbstractAspectJAdvisorFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
-              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-              <folding>
-                <element signature="e#3042#3043#0" expanded="true" />
-                <element signature="e#3098#3099#0" expanded="true" />
-                <element signature="e#3173#3174#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -814,11 +539,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyProperties.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyProperties.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/constant/MyProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="22" column="134" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="134" />
+            <state relative-caret-position="239">
+              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -951,16 +676,288 @@
       <file leaf-file-name="UpdateLoggerLevel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/logger/UpdateLoggerLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="58" lean-forward="true" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+            <state relative-caret-position="414">
+              <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding>
-                <element signature="e#1446#1572#0" expanded="true" />
-                <element signature="e#1571#1572#0" expanded="true" />
-                <element signature="e#2630#2631#0" expanded="true" />
-                <element signature="e#2665#2666#0" expanded="true" />
-                <element signature="e#2721#2722#0" expanded="true" />
-                <element signature="e#2769#2770#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1628#1754#0" expanded="true" />
+                <element signature="e#1753#1754#0" expanded="true" />
+                <element signature="e#2990#2991#0" expanded="true" />
+                <element signature="e#3025#3026#0" expanded="true" />
+                <element signature="e#3081#3082#0" expanded="true" />
+                <element signature="e#3129#3130#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SCDomain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/domain/SCDomain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#543#544#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#604#605#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#681#682#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentDomain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/domain/StudentDomain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SCMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/dao/SCMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SCDTO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/dto/SCDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+              <folding>
+                <element signature="e#272#273#0" expanded="true" />
+                <element signature="e#304#305#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#654#655#0" expanded="true" />
+                <element signature="e#688#689#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SCService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/interf/SCService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SCServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/SCServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mybatis-config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/mybatis-config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jdbcTest.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/resources/jdbcTest.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mybatis-config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/resources/mybatis-config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="15" column="64" lean-forward="false" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SCServiceTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/SCServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="589">
+              <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisTestImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/RedisTestImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SCMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/mybatisMapper/SCMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="65" lean-forward="false" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+              <folding>
+                <marker date="1517887606000" expanded="true" signature="595:717" ph="SELECT * FRO... sc" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterfTestTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/InterfTestTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="13" column="65" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BeanUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/utils/BeanUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/StudentMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="39" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="9" />
+              <folding>
+                <marker date="1514343936000" expanded="true" signature="684:760" ph="SELECT sid, student" />
+                <marker date="1514343936000" expanded="true" signature="841:907" ph="UPDATE student... " />
+                <marker date="1514343936000" expanded="true" signature="988:1056" ph="UPDATE student... " />
+                <marker date="1514343936000" expanded="true" signature="1368:1487" ph="INSERT INTO student... " />
+                <marker date="1514343936000" expanded="true" signature="1570:1591" ph="SELECT * FRO... student" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SCMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/SCMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <folding>
+                <marker date="1517887622000" expanded="true" signature="595:611" ph="SELECT * FRO... sc" />
+                <marker date="1517887622000" expanded="true" signature="595:717" ph="SELECT * FRO... sc" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SCRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/SCRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/BaseRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+              <folding>
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#866#867#0" expanded="true" />
+                <element signature="e#893#894#0" expanded="true" />
+                <element signature="e#930#931#0" expanded="true" />
+                <element signature="e#962#963#0" expanded="true" />
+                <element signature="e#993#994#0" expanded="true" />
+                <element signature="e#1023#1024#0" expanded="true" />
+                <element signature="e#1066#1067#0" expanded="true" />
+                <element signature="e#1104#1105#0" expanded="true" />
+                <element signature="e#1591#1592#0" expanded="true" />
+                <element signature="e#1633#1634#0" expanded="true" />
+                <element signature="e#1669#1670#0" expanded="true" />
+                <element signature="e#1710#1711#0" expanded="true" />
+                <element signature="e#1756#1757#0" expanded="true" />
+                <element signature="e#1798#1799#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-api/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="35" column="36" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="43" column="21" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="43" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -968,8 +965,18 @@
       <file leaf-file-name="ScheduledExecutorService.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/concurrent/ScheduledExecutorService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="109" column="30" lean-forward="false" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+            <state relative-caret-position="188">
+              <caret line="153" column="30" lean-forward="false" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScheduledThreadPoolExecutor.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/concurrent/ScheduledThreadPoolExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="471">
+              <caret line="571" column="25" lean-forward="false" selection-start-line="571" selection-start-column="25" selection-end-line="571" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -1025,6 +1032,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MyAopTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/aop/MyAopTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="GaofeiMqProducerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/GaofeiMqProducerTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -1048,8 +1065,8 @@
       <file leaf-file-name="StudentServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/StudentServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="54" column="26" lean-forward="false" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+            <state relative-caret-position="221">
+              <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
               <folding>
                 <element signature="e#2303#2315#0" expanded="true" />
               </folding>
@@ -1420,6 +1437,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="HTTP Request" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -1436,6 +1456,8 @@
       <find>doDispatch(</find>
       <find>zkAdrr</find>
       <find>testproper</find>
+      <find>core</find>
+      <find>spring</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1444,19 +1466,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/MUserRoleMapper.xml" />
-        <option value="$PROJECT_DIR$/mydubbo-service/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/mydubbo-service/src/main/java/MybatisGenerator.java" />
-        <option value="$PROJECT_DIR$/mydubbo-service/src/main/java/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/domain/Student.java" />
-        <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/controller/MybatisController.java" />
-        <option value="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/interf/Interf.java" />
-        <option value="$PROJECT_DIR$/mydubbo-web/src/main/resources/META-INF/dubbo/com.alibaba.dubbo.rpc.Filter" />
-        <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/filter/MyFilterTest.java" />
-        <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/aop/MyAnnotationTest.java" />
-        <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/service/ForInject.java" />
-        <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/service/TempService.java" />
-        <option value="$PROJECT_DIR$/mydubbo-web/src/main/webapp/WEB-INF/velocity/templates/layouttest/normaltest.vm" />
         <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/service/ServiceCallDubbo.java" />
         <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/controller/RestTemplateController.java" />
         <option value="$PROJECT_DIR$/mydubbo-web/src/main/resources/META-INF/spring/dubbo-demo-action.xml" />
@@ -1464,7 +1473,6 @@
         <option value="$PROJECT_DIR$/mydubbo-service/src/test/java/TestBase/BaseServiceTestWithoutTransaction.java" />
         <option value="$PROJECT_DIR$/mydubbo-service/src/test/java/InterfTest.java" />
         <option value="$PROJECT_DIR$/mydubbo-service/src/test/java/TestBase/BaseServiceTestWithTransation.java" />
-        <option value="$PROJECT_DIR$/mydubbo-service/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/domain/StudentDomain.java" />
         <option value="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/poeple/StudentServiceImpl.java" />
         <option value="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/poeple/StudentService.java" />
@@ -1522,13 +1530,11 @@
         <option value="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/RedisTestImpl.java" />
         <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/interceptor/AddAttributeInterceptor.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/utils/BeanUtils.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-dubbo-service.xml" />
         <option value="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/spring/applicationContext-mybatis.xml" />
         <option value="$PROJECT_DIR$/mydubbo-web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/filter/AuthenticationFilterWeb.java" />
-        <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/aop/MyAopTest.java" />
         <option value="$PROJECT_DIR$/mydubbo-web/src/main/resources/META-INF/spring/applicationContext.xml" />
         <option value="$PROJECT_DIR$/mydubbo-web/src/main/resources/properties/value.properties" />
         <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/constant/UrlConstant.java" />
@@ -1545,6 +1551,22 @@
         <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/controller/MVCContrller.java" />
         <option value="$PROJECT_DIR$/mydubbo-web/src/main/resources/properties/updateLogger.properties" />
         <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/logger/UpdateLoggerLevel.java" />
+        <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/aop/MyAopTest.java" />
+        <option value="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/domain/SCDomain.java" />
+        <option value="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/SCRequest.java" />
+        <option value="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/dao/SCMapper.java" />
+        <option value="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/sfd.http" />
+        <option value="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/interf/SCService.java" />
+        <option value="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/utils/BeanUtils.java" />
+        <option value="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/SCServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mydubbo-service/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/mydubbo-service/src/test/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/mybatisMapper/SCMapper.xml" />
+        <option value="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/SCMapper.xml" />
+        <option value="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/dto/SCDTO.java" />
+        <option value="$PROJECT_DIR$/mydubbo-api/pom.xml" />
+        <option value="$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/SCServiceTest.java" />
+        <option value="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/BaseRequest.java" />
       </list>
     </option>
   </component>
@@ -1682,6 +1704,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gaofei" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="mydubbo-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gaofei" type="462c0819:PsiDirectoryNode" />
               <item name="interf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1692,7 +1724,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gaofei" type="462c0819:PsiDirectoryNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="request" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
@@ -1728,6 +1760,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gaofei" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="mydubbo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gaofei" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
@@ -1756,6 +1798,27 @@
               <item name="mydubbo-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gaofei" type="462c0819:PsiDirectoryNode" />
+              <item name="persist" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="mydubbo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gaofei" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="mydubbo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1770,92 +1833,63 @@
             <path>
               <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="mydubbo-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="mydubbo-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="mydubbo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="mydubbo-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisMapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="mydubbo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="mydubbo-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="mydubbo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="mydubbo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="mydubbo-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="implTest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="mydubbo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="mydubbo-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="constant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="mydubbo-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="mydubbo-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="logger" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="mydubbo-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="mydubbo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="mydubbo-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="properties" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mydubbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="mydubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="mydubbo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="mydubbo-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisMapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1878,11 +1912,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\mydubbo\mydubbo-service\src\test\resources\META-INF\mybatisMapper" />
       <recent name="E:\workspace\mydubbo\mydubbo-service\src\main\resources\META-INF" />
       <recent name="E:\workspace\mydubbo\mydubbo-service\src\main\resources\META-INF\spring" />
       <recent name="E:\workspace\mydubbo\mydubbo-service\src\main\java\com\gaofei" />
       <recent name="E:\workspace\mydubbo\mydubbo-service\src\main\java" />
-      <recent name="E:\workspace\mydubbo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.gaofei.mq" />
@@ -1908,7 +1942,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.dubboweb">
+  <component name="RunManager" selected="JUnit.SCServiceTest.testSelectSCList">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1982,6 +2016,25 @@
       <option name="MAIN_CLASS_NAME" value="implTest.RedisTestImplTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SCServiceTest.testSelectSCList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mydubbo-service" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="implTest" />
+      <option name="MAIN_CLASS_NAME" value="implTest.SCServiceTest" />
+      <option name="METHOD_NAME" value="testSelectSCList" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -2223,18 +2276,20 @@
       <arguments />
       <envs />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.mydubbo-service" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.dubboweb" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.InterfTestTest.testGetStudentById" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.RedisTestImplTest" />
       <item index="4" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.SCServiceTest.testSelectSCList" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RedisTestImplTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.InterfTestTest.testGetStudentById" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SCServiceTest.testSelectSCList" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RedisTestImplTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.InterfTestTest.testGetStudentById" />
       </list>
     </recent_temporary>
   </component>
@@ -2242,35 +2297,35 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TestHistory">
-    <history-entry file="RedisTestImplTest - 2018.01.04 at 18h 19m 12s.xml">
-      <configuration name="RedisTestImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisTestImplTest - 2018.01.04 at 18h 21m 47s.xml">
-      <configuration name="RedisTestImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisTestImplTest - 2018.01.04 at 19h 05m 21s.xml">
-      <configuration name="RedisTestImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisTestImplTest - 2018.01.04 at 19h 59m 16s.xml">
-      <configuration name="RedisTestImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisTestImplTest - 2018.01.04 at 20h 03m 36s.xml">
-      <configuration name="RedisTestImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisTestImplTest - 2018.01.04 at 20h 04m 14s.xml">
-      <configuration name="RedisTestImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisTestImplTest - 2018.01.04 at 20h 04m 53s.xml">
-      <configuration name="RedisTestImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisTestImplTest_testHashTest - 2017.12.11 at 13h 54m 33s.xml">
-      <configuration name="RedisTestImplTest.testHashTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisTestImplTest_testHashTest - 2017.12.11 at 13h 56m 06s.xml">
-      <configuration name="RedisTestImplTest.testHashTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RedisTestImplTest_testHashTest - 2017.12.11 at 13h 56m 56s.xml">
       <configuration name="RedisTestImplTest.testHashTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.06 at 11h 19m 19s.xml">
+      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.06 at 11h 20m 41s.xml">
+      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.06 at 11h 25m 44s.xml">
+      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.06 at 11h 27m 12s.xml">
+      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.06 at 11h 27m 55s.xml">
+      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.06 at 11h 29m 19s.xml">
+      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.06 at 11h 43m 22s.xml">
+      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.06 at 11h 44m 59s.xml">
+      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.06 at 11h 51m 48s.xml">
+      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -2288,7 +2343,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33150986" sideWeight="0.49784946" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.50215054" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22365591" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2366,7 +2421,9 @@
     <MESSAGE value="注释" />
     <MESSAGE value="dubbo 配置service超时时间" />
     <MESSAGE value="Redis broadCast test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redis broadCast test" />
+    <MESSAGE value="运行时修改日志级别" />
+    <MESSAGE value="运行时修改日志级别  增加superDiamond 的处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="运行时修改日志级别  增加superDiamond 的处理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2523,11 +2580,17 @@
           <properties />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/SCServiceTest.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="82" />
+      <option name="time" value="84" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -2557,707 +2620,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/constant/TestPostConstruct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/config/AutowireCapableBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7975">
-          <caret line="339" column="11" lean-forward="false" selection-start-line="339" selection-start-column="11" selection-end-line="339" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19850">
-          <caret line="943" column="0" lean-forward="false" selection-start-line="943" selection-start-column="0" selection-end-line="943" selection-end-column="0" />
-          <folding>
-            <element signature="e#24820#24821#0" expanded="true" />
-            <element signature="e#24853#24854#0" expanded="true" />
-            <element signature="e#26586#26587#0" expanded="true" />
-            <element signature="e#26614#26615#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar!/org/slf4j/LoggerFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4825">
-          <caret line="210" column="0" lean-forward="false" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
-          <folding>
-            <marker date="1496208714000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1496208714000" expanded="false" signature="133:542" ph="..." />
-            <marker date="1496208714000" expanded="true" signature="2366:2373" ph="{}" />
-            <marker date="1496208714000" expanded="true" signature="2399:2494" ph="{...}" />
-            <marker date="1496208714000" expanded="true" signature="2550:2659" ph="{...}" />
-            <marker date="1496208714000" expanded="true" signature="2746:3010" ph="{...}" />
-            <marker date="1496208714000" expanded="true" signature="3049:4651" ph="{...}" />
-            <marker date="1496208714000" expanded="true" signature="4696:4806" ph="{...}" />
-            <marker date="1496208714000" expanded="true" signature="4862:5733" ph="{...}" />
-            <marker date="1496208714000" expanded="true" signature="5786:6629" ph="{...}" />
-            <marker date="1496208714000" expanded="true" signature="6699:7496" ph="{...}" />
-            <marker date="1496208714000" expanded="false" signature="7597:7608" ph=" { " />
-            <marker date="1496208714000" expanded="false" signature="7652:7658" ph=" }" />
-            <marker date="1496208714000" expanded="true" signature="7751:8262" ph="{...}" />
-            <marker date="1496208714000" expanded="true" signature="8344:8566" ph="{...}" />
-            <marker date="1496208714000" expanded="true" signature="8616:8731" ph="{...}" />
-            <marker date="1496208714000" expanded="true" signature="8784:9358" ph="{...}" />
-            <marker date="1496208714000" expanded="false" signature="9456:9467" ph=" { " />
-            <marker date="1496208714000" expanded="false" signature="9524:9530" ph=" }" />
-            <marker date="1496208714000" expanded="true" signature="9585:10230" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12-sources.jar!/org/slf4j/LoggerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6850">
-          <caret line="312" column="0" lean-forward="false" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/BeanUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2725">
-          <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/SimpleInstantiationStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1375">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.2.8.RELEASE/spring-context-4.2.8.RELEASE-sources.jar!/org/springframework/context/annotation/CommonAnnotationBeanPostProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6075">
-          <caret line="312" column="0" lean-forward="false" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.2.8.RELEASE/spring-context-4.2.8.RELEASE-sources.jar!/org/springframework/context/support/ApplicationContextAwareProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2275">
-          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-          <folding>
-            <element signature="e#4902#4903#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.8.RELEASE/spring-web-4.2.8.RELEASE-sources.jar!/org/springframework/web/context/support/ServletContextAwareProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2150">
-          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding>
-            <element signature="e#3851#3852#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.2.8.RELEASE/spring-context-4.2.8.RELEASE-sources.jar!/org/springframework/context/annotation/ConfigurationClassPostProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9125">
-          <caret line="449" column="0" lean-forward="false" selection-start-line="449" selection-start-column="0" selection-end-line="449" selection-end-column="0" />
-          <folding>
-            <element signature="e#19655#19656#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19200">
-          <caret line="843" column="22" lean-forward="false" selection-start-line="843" selection-start-column="22" selection-end-line="843" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.8.RELEASE/spring-core-4.2.8.RELEASE-sources.jar!/org/springframework/core/annotation/AnnotationUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15525">
-          <caret line="659" column="0" lean-forward="false" selection-start-line="659" selection-start-column="0" selection-end-line="659" selection-end-column="0" />
-          <folding>
-            <element signature="e#29781#29782#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/aspectj/annotation/AbstractAspectJAdvisorFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <element signature="e#3042#3043#0" expanded="true" />
-            <element signature="e#3098#3099#0" expanded="true" />
-            <element signature="e#3173#3174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/BeanFactoryAdvisorRetrievalHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1325">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/aspectj/annotation/BeanFactoryAspectJAdvisorsBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3050">
-          <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
-          <folding>
-            <element signature="e#5068#5077#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/aspectj/annotation/AnnotationAwareAspectJAutoProxyCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1625">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/aspectj/annotation/InstantiationModelAwarePointcutAdvisorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <element signature="e#3686#3687#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/support/AopUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5875">
-          <caret line="283" column="0" lean-forward="false" selection-start-line="283" selection-start-column="0" selection-end-line="283" selection-end-column="0" />
-          <folding>
-            <element signature="e#7998#8008#0" expanded="true" />
-            <element signature="e#10417#10426#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/ProxyCreationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/aspectj/AspectJProxyUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/aspectj/autoproxy/AspectJAwareAdvisorAutoProxyCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1325">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding>
-            <element signature="e#2875#2909#0" expanded="true" />
-            <element signature="e#3254#3263#0" expanded="true" />
-            <element signature="e#3761#3762#0" expanded="true" />
-            <element signature="e#3846#3847#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AbstractAdvisorAutoProxyCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="e#3788#3789#0" expanded="true" />
-            <element signature="e#3848#3849#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.8.RELEASE/spring-core-4.2.8.RELEASE-sources.jar!/org/springframework/util/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2425">
-          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/target/SingletonTargetSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AutoProxyUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/AdvisedSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4875">
-          <caret line="259" column="0" lean-forward="false" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ProxyConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2675">
-          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding>
-            <element signature="e#4639#4640#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ProxyProcessorSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1375">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding>
-            <element signature="e#2796#2797#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/DefaultAopProxyFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ProxyCreatorSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2075">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding>
-            <element signature="e#2255#2256#0" expanded="true" />
-            <element signature="e#2289#2290#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.8.RELEASE/spring-core-4.2.8.RELEASE.jar!/org/springframework/cglib/proxy/Enhancer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2825">
-          <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-          <folding>
-            <marker date="1496208812000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1496208812000" expanded="false" signature="155:2104" ph="..." />
-            <marker date="1496208812000" expanded="false" signature="2212:2290" ph="accept(method) → { " />
-            <marker date="1496208812000" expanded="false" signature="2299:2315" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="4640:4651" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="4665:4671" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="4721:5029" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="5080:5091" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="5120:5126" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="5184:5195" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="5216:5222" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="5270:5281" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="5325:5331" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="5384:5589" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="5640:5651" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="5680:5686" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="5771:5782" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="5845:5851" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="5904:5915" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="5964:5970" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="6028:6278" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="6307:6417" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="6487:6881" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="6914:6995" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="7043:7054" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="7083:7089" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="7122:7569" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="7599:9460" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="9496:9932" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="9985:10320" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="10372:10587" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="10642:10891" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="10947:10958" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="11040:11046" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="11133:11144" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="11211:11217" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="11346:12275" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="12340:15884" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="13043:13118" ph="transform(value) → {" />
-            <marker date="1496208812000" expanded="false" signature="13498:13517" ph="}" />
-            <marker date="1496208812000" expanded="true" signature="15953:16175" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="16241:16321" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="16374:16897" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="16949:17884" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="17940:18223" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="18309:18320" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="18366:18372" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="18464:18475" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="18551:18557" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="18608:18805" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="18883:18894" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="18960:18966" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="19064:19549" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="19656:19732" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="19787:20220" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="20285:20420" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="20511:20689" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="20806:21023" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="21082:21733" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="21805:23140" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="23178:23360" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="23424:24024" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="23678:23966" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="23736:23840" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="23883:23956" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="24088:24663" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="24250:24605" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="24308:24537" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="24580:24595" ph="{}" />
-            <marker date="1496208812000" expanded="true" signature="24716:25105" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="25158:25667" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="25728:25971" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="26016:26027" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="26144:26150" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="26206:26481" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="26541:27131" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="27210:28420" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="27585:28280" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="27646:28115" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="28157:28176" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="28256:28270" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="28502:33410" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="30622:32642" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="30671:30690" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="30728:30742" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="30806:30825" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="30871:30885" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="30937:30956" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="30992:31006" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="31070:31089" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="31133:31147" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="31213:31232" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="31315:31329" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="31400:31929" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="32010:32632" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="33469:33733" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="33792:33998" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="34063:34392" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="34446:35654" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="35709:35720" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="35753:35759" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="35772:37692" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="37731:39895" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="37731:39896" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="38050:38759" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="38860:39460" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="38860:39461" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="39524:39889" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="39930:40080" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.8.RELEASE/spring-core-4.2.8.RELEASE.jar!/org/springframework/cglib/core/AbstractClassGenerator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1325">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding>
-            <marker date="1496208812000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1496208812000" expanded="false" signature="154:483" ph="..." />
-            <marker date="1496208812000" expanded="false" signature="1098:1109" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="1141:1147" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="1197:1208" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="1245:1251" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="1328:1512" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="1565:1576" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="1605:1611" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="1654:1665" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="1687:1693" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="1742:1753" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="1780:1786" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="1853:1864" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="1966:1972" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="2029:2040" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="2071:2077" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="2138:2305" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="2348:2359" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="2384:2390" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="2437:2448" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="2473:2479" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="2513:2524" ph=" { " />
-            <marker date="1496208812000" expanded="true" signature="2545:2551" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="2604:2615" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="2646:2652" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="2689:2700" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="2724:2730" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="2788:2949" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="2993:3004" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="3025:3031" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="3086:3097" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="3142:3148" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="3190:3658" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="3773:3784" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="3796:3802" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="3844:5194" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="5270:7188" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="5270:7309" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="7374:7480" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="7432:7447" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="7464:7474" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="7525:9614" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="7806:7891" ph="evaluate(name) → { " />
-            <marker date="1496208812000" expanded="false" signature="7953:7977" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="8059:8186" ph="apply(gen) → { " />
-            <marker date="1496208812000" expanded="false" signature="8201:8225" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="8284:8962" ph="{...}" />
-            <marker date="1496208812000" expanded="false" signature="8573:8691" ph="apply(gen) → {" />
-            <marker date="1496208812000" expanded="false" signature="8841:8864" ph="}" />
-            <marker date="1496208812000" expanded="false" signature="9007:9022" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="9065:9075" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="9121:9136" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="9170:9180" ph=" }" />
-            <marker date="1496208812000" expanded="false" signature="9231:9246" ph=" { " />
-            <marker date="1496208812000" expanded="false" signature="9278:9288" ph=" }" />
-            <marker date="1496208812000" expanded="true" signature="9362:9608" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.8.RELEASE/spring-core-4.2.8.RELEASE.jar!/org/springframework/objenesis/instantiator/sun/SunReflectionFactoryInstantiator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <marker date="1496208812000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1496208812000" expanded="false" signature="170:327" ph="..." />
-            <marker date="1496208812000" expanded="true" signature="525:797" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="826:1011" ph="{...}" />
-            <marker date="1496208812000" expanded="true" signature="1083:1272" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.8.RELEASE/spring-core-4.2.8.RELEASE-sources.jar!/org/springframework/objenesis/SpringObjenesis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1975">
-          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ObjenesisCglibAopProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1475">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="e#1604#1605#0" expanded="true" />
-            <element signature="e#1624#1625#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3775">
-          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-          <folding>
-            <element signature="e#4035#4054#0" expanded="true" />
-            <element signature="e#9239#9240#0" expanded="true" />
-            <element signature="e#9267#9268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ProxyFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding>
-            <element signature="e#3743#3744#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5825">
-          <caret line="297" column="0" lean-forward="false" selection-start-line="297" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
-          <folding>
-            <element signature="e#10782#10783#0" expanded="true" />
-            <element signature="e#10800#10801#0" expanded="true" />
-            <element signature="e#11052#11053#0" expanded="true" />
-            <element signature="e#11070#11071#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/annotation/InitDestroyAnnotationBeanPostProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2475">
-          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/config/InstantiationAwareBeanPostProcessorAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1525">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.2.8.RELEASE/spring-context-4.2.8.RELEASE-sources.jar!/org/springframework/context/support/PostProcessorRegistrationDelegate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8800">
-          <caret line="400" column="0" lean-forward="false" selection-start-line="400" selection-start-column="0" selection-end-line="400" selection-end-column="0" />
-          <folding>
-            <element signature="e#2497#2505#0" expanded="true" />
-            <element signature="e#2712#2738#0" expanded="true" />
-            <element signature="e#3937#3974#0" expanded="true" />
-            <element signature="e#4746#4783#0" expanded="true" />
-            <element signature="e#6790#6816#0" expanded="true" />
-            <element signature="e#6876#6884#0" expanded="true" />
-            <element signature="e#6947#6955#0" expanded="true" />
-            <element signature="e#7824#7850#0" expanded="true" />
-            <element signature="e#8284#8310#0" expanded="true" />
-            <element signature="e#9615#9634#0" expanded="true" />
-            <element signature="e#9702#9721#0" expanded="true" />
-            <element signature="e#9781#9789#0" expanded="true" />
-            <element signature="e#9852#9860#0" expanded="true" />
-            <element signature="e#14241#14242#0" expanded="true" />
-            <element signature="e#14261#14262#0" expanded="true" />
-            <element signature="e#16658#16659#0" expanded="true" />
-            <element signature="e#16678#16679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/DisposableBeanAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2625">
-          <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar!/org/apache/commons/logging/impl/SLF4JLocationAwareLog.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <marker date="1496208726000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1496208726000" expanded="false" signature="155:377" ph="..." />
-            <marker date="1496208726000" expanded="true" signature="727:802" ph="{...}" />
-            <marker date="1496208726000" expanded="false" signature="839:850" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="886:892" ph=" }" />
-            <marker date="1496208726000" expanded="true" signature="929:940" ph=" { " />
-            <marker date="1496208726000" expanded="true" signature="976:982" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="1018:1029" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="1064:1070" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="1106:1117" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="1152:1158" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="1195:1206" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="1242:1248" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="1285:1296" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="1332:1338" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="1377:1388" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="1485:1491" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="1543:1554" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="1637:1643" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="1682:1693" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="1791:1797" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="1849:1860" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="1944:1950" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="1988:1999" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="2097:2103" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="2154:2165" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="2249:2255" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="2293:2304" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="2402:2408" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="2459:2470" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="2554:2560" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="2599:2610" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="2708:2714" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="2766:2777" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="2861:2867" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="2906:2917" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="3015:3021" ph=" }" />
-            <marker date="1496208726000" expanded="false" signature="3073:3084" ph=" { " />
-            <marker date="1496208726000" expanded="false" signature="3168:3174" ph=" }" />
-            <marker date="1496208726000" expanded="true" signature="3240:3378" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3000">
-          <caret line="195" column="18" lean-forward="false" selection-start-line="195" selection-start-column="18" selection-end-line="195" selection-end-column="18" />
-          <folding>
-            <element signature="e#13002#13545#0" expanded="true" />
-            <element signature="e#13544#13545#0" expanded="true" />
-            <element signature="e#26842#26843#0" expanded="true" />
-            <element signature="e#26952#26953#0" expanded="true" />
-            <element signature="e#27904#27905#0" expanded="true" />
-            <element signature="e#27940#27941#0" expanded="true" />
-            <element signature="e#31060#31061#0" expanded="true" />
-            <element signature="e#31097#31098#0" expanded="true" />
-            <element signature="e#31422#31423#0" expanded="true" />
-            <element signature="e#31480#31481#0" expanded="true" />
-            <element signature="e#48848#48849#0" expanded="true" />
-            <element signature="e#48898#48899#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22675">
-          <caret line="1022" column="0" lean-forward="false" selection-start-line="1022" selection-start-column="0" selection-end-line="1022" selection-end-column="0" />
-          <folding>
-            <element signature="e#28985#28993#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9850">
-          <caret line="437" column="0" lean-forward="false" selection-start-line="437" selection-start-column="0" selection-end-line="437" selection-end-column="0" />
-          <folding>
-            <element signature="e#7482#7483#0" expanded="true" />
-            <element signature="e#7524#7525#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/config/RuntimeBeanReference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
@@ -3426,14 +2788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.8.4/dubbo-2.8.4-sources.jar!/com/alibaba/dubbo/config/annotation/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/InterfTestTestImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-344">
@@ -3532,16 +2886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/StudentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="54" column="26" lean-forward="false" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
-          <folding>
-            <element signature="e#2303#2315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/service/ForInject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -3605,14 +2949,6 @@
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/dao/StudentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3707,14 +3043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/concurrent/ScheduledExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="109" column="30" lean-forward="false" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/controller/MVCContrller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-82">
@@ -3731,21 +3059,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/logger/UpdateLoggerLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="58" lean-forward="true" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-          <folding>
-            <element signature="e#1446#1572#0" expanded="true" />
-            <element signature="e#1571#1572#0" expanded="true" />
-            <element signature="e#2630#2631#0" expanded="true" />
-            <element signature="e#2665#2666#0" expanded="true" />
-            <element signature="e#2721#2722#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/constant/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -3756,9 +3069,567 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/constant/MyProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="22" column="134" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="134" />
+        <state relative-caret-position="239">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/aop/MyAopTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/concurrent/ScheduledExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="153" column="30" lean-forward="false" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-web/src/main/resources/META-INF/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1075">
+          <caret line="43" column="78" lean-forward="false" selection-start-line="43" selection-start-column="78" selection-end-line="43" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/concurrent/ScheduledThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="571" column="25" lean-forward="false" selection-start-line="571" selection-start-column="25" selection-end-line="571" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/logger/UpdateLoggerLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1628#1754#0" expanded="true" />
+            <element signature="e#1753#1754#0" expanded="true" />
+            <element signature="e#2990#2991#0" expanded="true" />
+            <element signature="e#3025#3026#0" expanded="true" />
+            <element signature="e#3081#3082#0" expanded="true" />
+            <element signature="e#3129#3130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19850">
+          <caret line="943" column="0" lean-forward="false" selection-start-line="943" selection-start-column="0" selection-end-line="943" selection-end-column="0" />
+          <folding>
+            <element signature="e#24820#24821#0" expanded="false" />
+            <element signature="e#24853#24854#0" expanded="false" />
+            <element signature="e#26586#26587#0" expanded="false" />
+            <element signature="e#26614#26615#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12-sources.jar!/org/slf4j/LoggerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6850">
+          <caret line="312" column="0" lean-forward="false" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/BeanUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2725">
+          <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar!/org/slf4j/LoggerFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4825">
+          <caret line="210" column="0" lean-forward="false" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
+          <folding>
+            <marker date="1496208714000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1496208714000" expanded="false" signature="133:542" ph="..." />
+            <marker date="1496208714000" expanded="true" signature="2366:2373" ph="{}" />
+            <marker date="1496208714000" expanded="true" signature="2399:2494" ph="{...}" />
+            <marker date="1496208714000" expanded="true" signature="2550:2659" ph="{...}" />
+            <marker date="1496208714000" expanded="true" signature="2746:3010" ph="{...}" />
+            <marker date="1496208714000" expanded="true" signature="3049:4651" ph="{...}" />
+            <marker date="1496208714000" expanded="true" signature="4696:4806" ph="{...}" />
+            <marker date="1496208714000" expanded="true" signature="4862:5733" ph="{...}" />
+            <marker date="1496208714000" expanded="true" signature="5786:6629" ph="{...}" />
+            <marker date="1496208714000" expanded="true" signature="6699:7496" ph="{...}" />
+            <marker date="1496208714000" expanded="false" signature="7597:7608" ph=" { " />
+            <marker date="1496208714000" expanded="false" signature="7652:7658" ph=" }" />
+            <marker date="1496208714000" expanded="true" signature="7751:8262" ph="{...}" />
+            <marker date="1496208714000" expanded="true" signature="8344:8566" ph="{...}" />
+            <marker date="1496208714000" expanded="true" signature="8616:8731" ph="{...}" />
+            <marker date="1496208714000" expanded="true" signature="8784:9358" ph="{...}" />
+            <marker date="1496208714000" expanded="false" signature="9456:9467" ph=" { " />
+            <marker date="1496208714000" expanded="false" signature="9524:9530" ph=" }" />
+            <marker date="1496208714000" expanded="true" signature="9585:10230" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.8.4/dubbo-2.8.4-sources.jar!/com/alibaba/dubbo/config/ReferenceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11025">
+          <caret line="511" column="0" lean-forward="false" selection-start-line="511" selection-start-column="0" selection-end-line="511" selection-end-column="0" />
+          <folding>
+            <element signature="e#19682#19683#0" expanded="false" />
+            <element signature="e#19738#19739#0" expanded="false" />
+            <element signature="e#19778#19779#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/aspectj/annotation/AbstractAspectJAdvisorFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <element signature="e#3042#3043#0" expanded="false" />
+            <element signature="e#3098#3099#0" expanded="false" />
+            <element signature="e#3173#3174#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/sfd.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/StudentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="39" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="9" />
+          <folding>
+            <marker date="1514343936000" expanded="true" signature="684:760" ph="SELECT sid, student" />
+            <marker date="1514343936000" expanded="true" signature="841:907" ph="UPDATE student... " />
+            <marker date="1514343936000" expanded="true" signature="988:1056" ph="UPDATE student... " />
+            <marker date="1514343936000" expanded="true" signature="1368:1487" ph="INSERT INTO student... " />
+            <marker date="1514343936000" expanded="true" signature="1570:1591" ph="SELECT * FRO... student" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/BeanFactoryAdvisorRetrievalHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1325">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/domain/StudentDomain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/aspectj/annotation/AnnotationAwareAspectJAutoProxyCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1625">
+          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/aspectj/AspectJProxyUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/interf/SCService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AbstractAdvisorAutoProxyCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="e#3788#3789#0" expanded="false" />
+            <element signature="e#3848#3849#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/dao/StudentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/StudentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding>
+            <element signature="e#2303#2315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/dao/SCMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/aspectj/autoproxy/AspectJAwareAdvisorAutoProxyCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1325">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="e#2875#2909#0" expanded="false" />
+            <element signature="e#3254#3263#0" expanded="false" />
+            <element signature="e#3761#3762#0" expanded="false" />
+            <element signature="e#3846#3847#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/utils/BeanUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/ProxyCreationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ProxyProcessorSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1375">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <element signature="e#2796#2797#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ProxyCreatorSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2075">
+          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding>
+            <element signature="e#2255#2256#0" expanded="false" />
+            <element signature="e#2289#2290#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/InterfTestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="13" column="65" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/DefaultAopProxyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.8.RELEASE/spring-core-4.2.8.RELEASE-sources.jar!/org/springframework/objenesis/SpringObjenesis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1975">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/resources/jdbcTest.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3775">
+          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+          <folding>
+            <element signature="e#4035#4054#0" expanded="false" />
+            <element signature="e#9239#9240#0" expanded="false" />
+            <element signature="e#9267#9268#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="64" lean-forward="false" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5825">
+          <caret line="297" column="0" lean-forward="false" selection-start-line="297" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
+          <folding>
+            <element signature="e#10782#10783#0" expanded="false" />
+            <element signature="e#10800#10801#0" expanded="false" />
+            <element signature="e#11052#11053#0" expanded="false" />
+            <element signature="e#11070#11071#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/RedisTestImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.8.4/dubbo-2.8.4-sources.jar!/com/alibaba/dubbo/config/annotation/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/SCServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ProxyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding>
+            <element signature="e#3743#3744#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/SCMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <marker date="1517887622000" expanded="true" signature="595:611" ph="SELECT * FRO... sc" />
+            <marker date="1517887622000" expanded="true" signature="595:717" ph="SELECT * FRO... sc" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/domain/SCDomain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/dto/SCDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/DisposableBeanAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2625">
+          <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="35" column="36" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.8.RELEASE/spring-beans-4.2.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3000">
+          <caret line="195" column="18" lean-forward="false" selection-start-line="195" selection-start-column="18" selection-end-line="195" selection-end-column="18" />
+          <folding>
+            <element signature="e#13002#13545#0" expanded="false" />
+            <element signature="e#13544#13545#0" expanded="false" />
+            <element signature="e#26842#26843#0" expanded="false" />
+            <element signature="e#26952#26953#0" expanded="false" />
+            <element signature="e#27904#27905#0" expanded="false" />
+            <element signature="e#27940#27941#0" expanded="false" />
+            <element signature="e#31060#31061#0" expanded="false" />
+            <element signature="e#31097#31098#0" expanded="false" />
+            <element signature="e#31422#31423#0" expanded="false" />
+            <element signature="e#31480#31481#0" expanded="false" />
+            <element signature="e#48848#48849#0" expanded="false" />
+            <element signature="e#48898#48899#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="43" column="21" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="43" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/mybatisMapper/SCMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="65" lean-forward="false" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+          <folding>
+            <marker date="1517887606000" expanded="true" signature="595:717" ph="SELECT * FRO... sc" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/SCRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/BaseRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1633#1634#0" expanded="true" />
+            <element signature="e#1669#1670#0" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1798#1799#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/SCServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
