@@ -8,10 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e590362b-e2da-46bb-ad5e-0f6c135ebd1d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/impl/StudentServiceImpl.class" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/impl/StudentServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/utils/BeanUtils.class" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/utils/BeanUtils.class" />
-      <change beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/mybatis-config.xml" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/mybatis-config.xml" />
-      <change beforePath="$PROJECT_DIR$/mydubbo-service/target/test-classes/mybatis-config.xml" afterPath="$PROJECT_DIR$/mydubbo-service/target/test-classes/mybatis-config.xml" />
+      <change beforePath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/SCRequest.java" afterPath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/SCRequest.java" />
+      <change beforePath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/SCMapper.xml" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/SCMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/SCServiceTest.java" afterPath="$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/SCServiceTest.java" />
+      <change beforePath="$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/mybatisMapper/SCMapper.xml" afterPath="$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/mybatisMapper/SCMapper.xml" />
     </list>
     <ignored path="mydubbo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -711,7 +711,7 @@
         <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/dao/SCMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
-              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="18" />
+              <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -744,8 +744,8 @@
       <file leaf-file-name="SCService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/interf/SCService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="300">
+              <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -756,8 +756,8 @@
       <file leaf-file-name="SCServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/SCServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="314">
+              <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -798,8 +798,8 @@
       <file leaf-file-name="SCServiceTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/SCServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="664">
+              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -820,10 +820,11 @@
       <file leaf-file-name="SCMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/mybatisMapper/SCMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="65" lean-forward="false" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+            <state relative-caret-position="250">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="16" selection-end-column="31" />
               <folding>
-                <marker date="1517887606000" expanded="true" signature="595:717" ph="SELECT * FRO... sc" />
+                <marker date="1517984776000" expanded="true" signature="595:773" ph="SELECT * FRO... sc" />
+                <marker date="1517984776000" expanded="true" signature="595:796" ph="SELECT * FRO... sc" />
               </folding>
             </state>
           </provider>
@@ -868,11 +869,11 @@
       <file leaf-file-name="SCMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/SCMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="313">
+              <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
               <folding>
-                <marker date="1517887622000" expanded="true" signature="595:611" ph="SELECT * FRO... sc" />
-                <marker date="1517887622000" expanded="true" signature="595:717" ph="SELECT * FRO... sc" />
+                <marker date="1517984798000" expanded="true" signature="595:611" ph="SELECT * FRO... sc" />
+                <marker date="1517984798000" expanded="true" signature="595:812" ph="SELECT * FRO... sc" />
               </folding>
             </state>
           </provider>
@@ -882,8 +883,21 @@
         <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/SCRequest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="125">
-              <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-              <folding />
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="e#206#207#0" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
+                <element signature="e#273#274#0" expanded="true" />
+                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#360#361#0" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#457#458#0" expanded="true" />
+                <element signature="e#485#486#0" expanded="true" />
+                <element signature="e#527#528#0" expanded="true" />
+                <element signature="e#561#562#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1536,7 +1550,6 @@
         <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/logger/UpdateLoggerLevel.java" />
         <option value="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/aop/MyAopTest.java" />
         <option value="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/domain/SCDomain.java" />
-        <option value="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/SCRequest.java" />
         <option value="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/dao/SCMapper.java" />
         <option value="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/sfd.http" />
         <option value="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/interf/SCService.java" />
@@ -1544,12 +1557,13 @@
         <option value="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/SCServiceImpl.java" />
         <option value="$PROJECT_DIR$/mydubbo-service/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/mydubbo-service/src/test/resources/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/mybatisMapper/SCMapper.xml" />
-        <option value="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/SCMapper.xml" />
         <option value="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/dto/SCDTO.java" />
         <option value="$PROJECT_DIR$/mydubbo-api/pom.xml" />
-        <option value="$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/SCServiceTest.java" />
         <option value="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/BaseRequest.java" />
+        <option value="$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/SCServiceTest.java" />
+        <option value="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/SCRequest.java" />
+        <option value="$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/mybatisMapper/SCMapper.xml" />
+        <option value="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/SCMapper.xml" />
       </list>
     </option>
   </component>
@@ -2280,21 +2294,6 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TestHistory">
-    <history-entry file="RedisTestImplTest_testHashTest - 2017.12.11 at 13h 56m 56s.xml">
-      <configuration name="RedisTestImplTest.testHashTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.06 at 11h 19m 19s.xml">
-      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.06 at 11h 20m 41s.xml">
-      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.06 at 11h 25m 44s.xml">
-      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.06 at 11h 27m 12s.xml">
-      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SCServiceTest_testSelectSCList - 2018.02.06 at 11h 27m 55s.xml">
       <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
     </history-entry>
@@ -2308,6 +2307,21 @@
       <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SCServiceTest_testSelectSCList - 2018.02.06 at 11h 51m 48s.xml">
+      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.07 at 14h 19m 46s.xml">
+      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.07 at 14h 21m 20s.xml">
+      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.07 at 14h 24m 13s.xml">
+      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.07 at 14h 25m 14s.xml">
+      <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SCServiceTest_testSelectSCList - 2018.02.07 at 14h 26m 54s.xml">
       <configuration name="SCServiceTest.testSelectSCList" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -2564,17 +2578,11 @@
           <properties />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/SCServiceTest.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="84" />
+      <option name="time" value="85" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -3251,16 +3259,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/interf/SCService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AbstractAdvisorAutoProxyCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1225">
@@ -3286,16 +3284,6 @@
           <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
           <folding>
             <element signature="e#2303#2315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/dao/SCMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3439,33 +3427,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/SCServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ProxyFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2175">
           <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding>
             <element signature="e#3743#3744#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/SCMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <marker date="1517887622000" expanded="true" signature="595:611" ph="SELECT * FRO... sc" />
-            <marker date="1517887622000" expanded="true" signature="595:717" ph="SELECT * FRO... sc" />
           </folding>
         </state>
       </provider>
@@ -3564,24 +3531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/mybatisMapper/SCMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="65" lean-forward="false" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-          <folding>
-            <marker date="1517887606000" expanded="true" signature="595:717" ph="SELECT * FRO... sc" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/SCRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/BaseRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -3607,10 +3556,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/interf/SCService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/SCServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/dao/SCMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/SCRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/mybatisMapper/SCMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <marker date="1517984776000" expanded="true" signature="595:773" ph="SELECT * FRO... sc" />
+            <marker date="1517984776000" expanded="true" signature="595:796" ph="SELECT * FRO... sc" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/SCMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <marker date="1517984798000" expanded="true" signature="595:611" ph="SELECT * FRO... sc" />
+            <marker date="1517984798000" expanded="true" signature="595:812" ph="SELECT * FRO... sc" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/SCServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state relative-caret-position="664">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

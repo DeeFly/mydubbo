@@ -22,7 +22,8 @@ public class SCServiceTest extends BaseServiceTestWithTransation {
     @Test
     public void testSelectSCList() {
         SCRequest scRequest = new SCRequest();
-        scRequest.addOrderBy("score", BaseRequest.Order.DESC);
+        scRequest.addOrderBy("score", BaseRequest.Order.ASC);
+        scRequest.setOrder("score");
         List<SCDTO> scdtoList = scService.selectSCList(scRequest);
         Assert.assertNotNull(scdtoList);
     }
