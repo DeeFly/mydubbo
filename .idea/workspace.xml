@@ -7,28 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e590362b-e2da-46bb-ad5e-0f6c135ebd1d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/dto/SCDTO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/interf/SCService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/BaseRequest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-api/src/main/java/com/gaofei/request/SCRequest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/impl/SCServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/dao/SCMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/persist/domain/SCDomain.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/resources/META-INF/mybatisMapper/SCMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/SCServiceTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mydubbo-service/src/test/resources/META-INF/mybatisMapper/SCMapper.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/mydubbo-api/mydubbo-api.iml" afterPath="$PROJECT_DIR$/mydubbo-api/mydubbo-api.iml" />
-      <change beforePath="$PROJECT_DIR$/mydubbo-api/pom.xml" afterPath="$PROJECT_DIR$/mydubbo-api/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/mydubbo-service/mydubbo-service.iml" afterPath="$PROJECT_DIR$/mydubbo-service/mydubbo-service.iml" />
-      <change beforePath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/utils/BeanUtils.java" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/java/com/gaofei/utils/BeanUtils.java" />
-      <change beforePath="$PROJECT_DIR$/mydubbo-service/src/main/resources/mybatis-config.xml" afterPath="$PROJECT_DIR$/mydubbo-service/src/main/resources/mybatis-config.xml" />
-      <change beforePath="$PROJECT_DIR$/mydubbo-service/src/test/resources/mybatis-config.xml" afterPath="$PROJECT_DIR$/mydubbo-service/src/test/resources/mybatis-config.xml" />
       <change beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/impl/StudentServiceImpl.class" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/impl/StudentServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/utils/BeanUtils.class" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/com/gaofei/utils/BeanUtils.class" />
       <change beforePath="$PROJECT_DIR$/mydubbo-service/target/classes/mybatis-config.xml" afterPath="$PROJECT_DIR$/mydubbo-service/target/classes/mybatis-config.xml" />
       <change beforePath="$PROJECT_DIR$/mydubbo-service/target/test-classes/mybatis-config.xml" afterPath="$PROJECT_DIR$/mydubbo-service/target/test-classes/mybatis-config.xml" />
-      <change beforePath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/aop/MyAopTest.java" afterPath="$PROJECT_DIR$/mydubbo-web/src/main/java/com/gaofei/web/aop/MyAopTest.java" />
     </list>
     <ignored path="mydubbo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -815,8 +798,8 @@
       <file leaf-file-name="SCServiceTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/SCServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+            <state relative-caret-position="189">
+              <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2423,7 +2406,8 @@
     <MESSAGE value="Redis broadCast test" />
     <MESSAGE value="运行时修改日志级别" />
     <MESSAGE value="运行时修改日志级别  增加superDiamond 的处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="运行时修改日志级别  增加superDiamond 的处理" />
+    <MESSAGE value="mybatis $ #" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis $ #" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3625,8 +3609,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mydubbo-service/src/test/java/implTest/SCServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        <state relative-caret-position="189">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
