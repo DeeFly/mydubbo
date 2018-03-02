@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gaofei.persist.dao.PeopleDetailMapper">
+    <resultMap id="scDomain" type="com.gaofei.persist.domain.SCDomain">
+        <id property="studentId" column="sid" javaType="String" />
+        <id property="courseId" column="cid" javaType="String"/>
+        <result property="score" column="score" javaType="Integer"/>
+    </resultMap>
+
+    <insert id="saveDetails" parameterType="collection" >
+        INSERT INTO tbuseridcardinfodb (`id`,`name`,ctfId,gender,birthday,address,mobile,tel,eMail,company,provinceId,districtId)
+        VALUES
+        <foreach collection="list" close=")" item="person" open="(" separator=",">
+          #{person.id}#{person.name},#{person.ctfId},#{person.gender},#{person.birthday},#{person.address},
+            #{person.mobile},#{person.tel},#{person.eMail},#{person.company},#{person.provinceId},#{person.districtId}
+        </foreach>
+    </insert>
+
+    <insert id="saveSingleDetails">
+        INSERT INTO tbuseridcardinfodb (`id`,`name`,ctfId,gender,birthday,address,mobile,tel,eMail,company,provinceId,districtId)
+        VALUES
+        (#{person.id},#{person.name},#{person.ctfId},#{person.gender},#{person.birthday},#{person.address},
+        #{person.mobile},#{person.tel},#{person.eMail},#{person.company},#{person.provinceId},#{person.districtId})
+    </insert>
+
+    <!--
+    CREATE TABLE `tbuseridcardinfodb` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '自增主键',
+  `name` varchar(16) CHARACTER SET utf8 DEFAULT NULL COMMENT '姓名',
+  `ctfId` varchar(18) CHARACTER SET utf8 NOT NULL COMMENT '身份证号码18位合法',
+  `gender` varchar(1) CHARACTER SET utf8 DEFAULT NULL COMMENT '性别:F,M',
+  `birthday` varchar(8) CHARACTER SET utf8 DEFAULT NULL COMMENT '生日',
+  `address` varchar(255) CHARACTER SET utf8 DEFAULT NULL COMMENT '地址',
+  `mobile` varchar(11) CHARACTER SET utf8 DEFAULT NULL COMMENT '手机号',
+  `tel` varchar(32) CHARACTER SET utf8 DEFAULT NULL COMMENT '电话号码',
+  `eMail` varchar(64) CHARACTER SET utf8 DEFAULT NULL COMMENT '邮箱',
+  `company` varchar(255) CHARACTER SET utf8 DEFAULT NULL COMMENT '公司',
+  `provinceId` int(2) DEFAULT NULL COMMENT '身份证前2位的省份ID',
+  `districtId` int(6) DEFAULT NULL COMMENT '区域ID',
+  PRIMARY KEY (`id`)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+    -->
+</mapper>
