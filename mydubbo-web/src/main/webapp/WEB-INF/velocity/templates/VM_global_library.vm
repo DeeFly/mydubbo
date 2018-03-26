@@ -1,0 +1,28 @@
+#macro( evaluationPeriod )
+<span class="opt-period active" data-type="4">本学期</span>
+<span class="opt-period" data-type="8">过去7天</span>
+<span class="opt-period" data-type="1">昨日</span>
+<span class="opt-period" data-type="10">上学期</span>
+#end
+
+#macro( mobilePeriod )
+<span class="active" data-value="4">本学期</span>
+<span data-value="8">近七天</span>
+<span data-value="1">昨日</span>
+<span data-value="10">上学期</span>
+#end
+
+#macro( withStringPeriod $periodTypes)
+    #set($semester = ${periodTypes.get("semester")})
+    #set($week = ${periodTypes.get("week")})
+    #set($month = ${periodTypes.get("month")})
+    #set($lastSemester = ${periodTypes.get("lastSemester")})
+<span class="current" data-type="4">${semester[0]} - ${semester[1]}</span>
+<i class="iconfont">&#xe923;</i>
+<ul class="select-choice-ul">
+    <li data-type="4" data-date="#if($semester)${semester[0]} - ${semester[1]}#end">本学期（${semester[0]} - ${semester[1]}）</li>
+    <li data-type="2" data-date="#if($week)${week[0]} - ${week[1]}#end">上一周#if($week)（${week[0]} - ${week[1]}）#end</li>
+    <li data-type="3" data-date="#if($month)${month[0]} - ${month[1]}#end">上个月#if($month)（${month[0]} - ${month[1]}）#end</li>
+    <li data-type="10" data-date="#if($lastSemester)${lastSemester[0]} - ${lastSemester[1]}#end">上学期（${lastSemester[0]} - ${lastSemester[1]}）</li>
+</ul>
+#end
