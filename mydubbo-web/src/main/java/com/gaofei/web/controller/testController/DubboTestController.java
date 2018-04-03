@@ -2,6 +2,7 @@ package com.gaofei.web.controller.testController;
 
 import com.gaofei.interf.RedisTest;
 import com.google.common.base.Stopwatch;
+import net.xuele.cloudwork.service.CloudWorkService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,23 +21,32 @@ import java.util.concurrent.TimeUnit;
 public class DubboTestController {
     @Autowired
     private RedisTest redisTest;
+    @Autowired
+    private CloudWorkService cloudWorkService;
     Logger logger = LoggerFactory.getLogger(DubboTestController.class);
+
+    @RequestMapping("testCloudWork")
+    @ResponseBody
+    public String testCloudWork() {
+        cloudWorkService.regular();
+        return "";
+    }
 
     @RequestMapping("overTimeGet")
     @ResponseBody
-    public String overTime(@RequestParam(value = "key",required = false) String key) {
-        Stopwatch sw=Stopwatch.createStarted();
+    public String overTime(@RequestParam(value = "key", required = false) String key) {
+        Stopwatch sw = Stopwatch.createStarted();
         String result = redisTest.get(key);
-        logger.warn("overTimeGet eclapsed : {}",sw.elapsed(TimeUnit.SECONDS));
+        logger.warn("overTimeGet eclapsed : {}", sw.elapsed(TimeUnit.SECONDS));
         return result;
     }
 
     @RequestMapping("overTimeSet")
     @ResponseBody
-    public String overTimeSet(@RequestParam(value = "key",required = false) String key) {
-        Stopwatch sw=Stopwatch.createStarted();
+    public String overTimeSet(@RequestParam(value = "key", required = false) String key) {
+        Stopwatch sw = Stopwatch.createStarted();
         redisTest.set(key);
-        logger.warn("overTimeSet eclapsed : {}",sw.elapsed(TimeUnit.SECONDS));
+        logger.warn("overTimeSet eclapsed : {}", sw.elapsed(TimeUnit.SECONDS));
         return "success";
     }
 }

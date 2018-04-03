@@ -20,6 +20,8 @@
     <dubbo:reference id="redisTest" interface="com.gaofei.interf.RedisTest" check="false"/>
     <dubbo:reference id="redisBroadCastSendService" interface="com.gaofei.redis.RedisBroadCastSendService" check="false"/>
 
+    <dubbo:reference id="cloudWorkService" interface="net.xuele.cloudwork.service.CloudWorkService" check="false"/>
+
     <!-- directly connect to provider to simulate the access to non-dubbo rest services -->
     <!--<dubbo:reference id="anotherUserRestService" interface="com.alibaba.dubbo.demo.user.facade.AnotherUserRestService" url="rest://localhost:8888/services/"/>-->
 
