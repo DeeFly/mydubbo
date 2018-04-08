@@ -25,13 +25,6 @@ public class DubboTestController {
     private CloudWorkService cloudWorkService;
     Logger logger = LoggerFactory.getLogger(DubboTestController.class);
 
-    @RequestMapping("testCloudWork")
-    @ResponseBody
-    public String testCloudWork() {
-        cloudWorkService.regular();
-        return "";
-    }
-
     @RequestMapping("overTimeGet")
     @ResponseBody
     public String overTime(@RequestParam(value = "key", required = false) String key) {

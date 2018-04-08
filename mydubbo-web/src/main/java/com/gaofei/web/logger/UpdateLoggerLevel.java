@@ -43,7 +43,7 @@ public class UpdateLoggerLevel implements InitializingBean {
         scheduledThreadPool.scheduleAtFixedRate(new Runnable() {
             @Override
             public void run() {
-                detectChange();
+                //detectChange();
             }
         }, 1,5, TimeUnit.SECONDS);
     }

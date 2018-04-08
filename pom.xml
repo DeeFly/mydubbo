@@ -18,6 +18,15 @@
     <dependencyManagement>
         <dependencies>
 
+            <!--spring-security可能会发生transitive dependencies，加上这个就好了-->
+            <!--<dependency>-->
+                <!--<groupId>org.springframework</groupId>-->
+                <!--<artifactId>spring-framework-bom</artifactId>-->
+                <!--<version>5.0.4.RELEASE</version>-->
+                <!--<type>pom</type>-->
+                <!--<scope>import</scope>-->
+            <!--</dependency>-->
+
             <dependency>
                 <groupId>net.xuele.cloudwork</groupId>
                 <artifactId>cloudwork-api</artifactId>

@@ -30,6 +30,11 @@ public class MVCContrller {
     private InterfTest interfTest;
     private final Logger logger = LoggerFactory.getLogger(MVCContrller.class);
 
+    @RequestMapping("login")
+    public String login(HttpServletRequest request) {
+        return "security/login";
+    }
+
     @RequestMapping("handlerTest")
     @ResponseBody
     public String handlerTest(HttpServletRequest request) {
