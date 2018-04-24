@@ -7,7 +7,7 @@
 
     <dubbo:application name="dubbo-web" owner="gaofei" organization="public"/>
 
-    <dubbo:registry address="zookeeper://zk.infra.middleware.xueleyun.com:2181"/>
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
 
     <dubbo:consumer retries="0" timeout="5000"/>
     <!--uncomment this if you want to test dubbo's monitor-->

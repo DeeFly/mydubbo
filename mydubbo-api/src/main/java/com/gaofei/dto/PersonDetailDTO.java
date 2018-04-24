@@ -1,9 +1,12 @@
 package com.gaofei.dto;
 
+import java.io.Serializable;
+
 /**
  * Created by GaoQingming on 2018/3/1 0001.
  */
-public class PersonDetailDTO {
+public class PersonDetailDTO implements Serializable{
+    private static final long serialVersionUID = 5135705259359934793L;
     private long id;
     private String name;
     private String ctfId;

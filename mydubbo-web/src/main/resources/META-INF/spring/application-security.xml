@@ -1,0 +1,96 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sec="http://www.springframework.org/schema/p"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/security
+		http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <!--http标签可以有多个-->
+    <http>
+        <intercept-url pattern="/**" access="hasRole('USER')"/>
+        <form-login/>
+        <logout delete-cookies="JSESSIONID"/>
+        <session-management invalid-session-url="/invalidSession.htm">  <!-- 如果想用session过期，要配合delete-cookes使用，存放到redis的话不知道如何处理-->
+            <!--单人登录 error-if-maximum-exceeded 为true表示不允许第二个人登录-->
+            <concurrency-control max-sessions="1" error-if-maximum-exceeded="true"/>
+        </session-management>
+    </http>
+    <!--分别用于不同用途的http配置,可以有多个-->
+        <!--&lt;!&ndash; Stateless RESTful service using Basic authentication &ndash;&gt;-->
+    <!--<http pattern="/restful/**" create-session="stateless">-->
+        <!--<intercept-url pattern='/**' access="hasRole('REMOTE')" />-->
+        <!--<http-basic />-->
+    <!--</http>-->
+
+    <!--&lt;!&ndash; Empty filter chain for the login page &ndash;&gt;-->
+    <!--<http pattern="/login.htm*" security="none"/>-->
+
+    <!--&lt;!&ndash; Additional filter chain for normal users, matching all other requests &ndash;&gt;-->
+    <!--<http>-->
+        <!--<intercept-url pattern='/**' access="hasRole('USER')" />-->
+        <!--<form-login login-page='/login.htm' default-target-url="/home.htm"/>-->
+        <!--<logout />-->
+    <!--</http>-->
+
+    <beans:bean name="bcryptEncoder"
+                class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+
+    <authentication-manager>
+        <!--<authentication-provider ref="" user-service-ref="">-->
+        <authentication-provider>
+            <password-encoder ref="bcryptEncoder"/>
+            <user-service>
+                <user name="jimi" password="$2a$10$ddEWZUl8aU0GdZPPpy7wbu82dvEw/pBpbRvDQRqA41y6mK1CoH00m"
+                      authorities="ROLE_USER, ROLE_ADMIN"/>
+                <user name="bob" password="$2a$10$/elFpMBnAYYig6KRR5bvOOYeZr1ie1hSogJryg9qDlhza4oCw1Qka"
+                      authorities="ROLE_USER"/>
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+
+    <!--
+        这个方法不如写多个http标签好。
+        如果要指定多个filter分别过滤不同的pattern，可以在这里定义多个filter-chain，
+        然后将这里的id:filterChainProxy写到web.xml中的<filter-name></filter-name>中
+        但是没有尝试过，可能web.xml中不用写?-->
+    <beans:bean id="filterChainProxy" class="org.springframework.security.web.FilterChainProxy">
+        <beans:constructor-arg>
+            <beans:list>
+                <sec:filter-chain pattern="/restful/**" filters="
+		securityContextPersistenceFilterWithASCFalse,
+		basicAuthenticationFilter,
+		exceptionTranslationFilter,
+		filterSecurityInterceptor"/>
+                <sec:filter-chain pattern="/**" filters="
+		securityContextPersistenceFilterWithASCTrue,
+		formLoginFilter,
+		exceptionTranslationFilter,
+		filterSecurityInterceptor"/>
+                <sec:filter-chain pattern="/none/*" filters="none"/>
+            </beans:list>
+        </beans:constructor-arg>
+    </beans:bean>
+
+    <!--路由匹配规则，是否严格，相同的结果也可以用代码来实现：-->
+    <!--
+        @Bean
+        public StrictHttpFirewall httpFirewall() {
+            StrictHttpFirewall firewall = new StrictHttpFirewall();
+            firewall.setAllowSemicolon(true);
+            return firewall;
+        }
+    -->
+    <!--路由匹配规则，是否严格，相同的结果也可以用代码来实现：-->
+    <beans:bean id="httpFirewall"
+                class="org.springframework.security.web.firewall.StrictHttpFirewall">
+        <beans:property name="allowSemicolon" value="true"/>
+    </beans:bean>
+    <http-firewall ref="httpFirewall"/>
+
+    <!--提示信息本地化 classpath:org/springframework/security/messages-->
+    <beans:bean id="messageSource"
+                class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <beans:property name="basename" value="properties.messages"/>
+    </beans:bean>
+</beans:beans>

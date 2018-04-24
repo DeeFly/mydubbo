@@ -40,4 +40,21 @@
   PRIMARY KEY (`id`)
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
     -->
+
+    <!-- 多对多查询
+     <resultMap id="classScoreMap" type="net.xuele.group.view.CtClassScoreList">
+        <id column="ccl_id" property="cclId" jdbcType="VARCHAR"/>
+        <result column="ccl_begtime" property="beginTime" jdbcType="TIMESTAMP"/>
+        <result column="ccl_endtime" property="endTime" jdbcType="TIMESTAMP"/>
+        <result column="ccl_class_id" property="classId" jdbcType="VARCHAR"/>
+        <result column="ccl_class_alias_name" property="className" jdbcType="VARCHAR"/>
+        <result column="school_id" property="schoolId" jdbcType="VARCHAR"/>
+        <collection property="studentScoreList" javaType="ArrayList" column="ccl_id=ccl_id,school_id=school_id"
+                    ofType="net.xuele.group.view.CtClassScoreStudentLogDetail"
+                    select="selectStudentScore"/>
+        <collection property="groupScoreList" javaType="ArrayList" column="ccl_id=ccl_id,school_id=school_id"
+                    ofType="net.xuele.group.view.CtClassScoreGroupLogDetail"
+                    select="selectGroupScore"/>
+    </resultMap>
+    -->
 </mapper>

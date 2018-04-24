@@ -28,11 +28,13 @@ public class MVCContrller {
     private TestPostConstruct testPostConstruct;
     @Autowired
     private InterfTest interfTest;
+
     private final Logger logger = LoggerFactory.getLogger(MVCContrller.class);
 
     @RequestMapping("login")
     public String login(HttpServletRequest request) {
-        return "security/login";
+        System.out.println("hahahhahahah");
+        return "security/security";
     }
 
     @RequestMapping("handlerTest")
