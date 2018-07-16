@@ -2,7 +2,6 @@ package com.gaofei.web.controller.testController;
 
 import com.gaofei.interf.RedisTest;
 import com.google.common.base.Stopwatch;
-import net.xuele.cloudwork.service.CloudWorkService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +20,6 @@ import java.util.concurrent.TimeUnit;
 public class DubboTestController {
     @Autowired
     private RedisTest redisTest;
-    @Autowired
-    private CloudWorkService cloudWorkService;
     Logger logger = LoggerFactory.getLogger(DubboTestController.class);
 
     @RequestMapping("overTimeGet")

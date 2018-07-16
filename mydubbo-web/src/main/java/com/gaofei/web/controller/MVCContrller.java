@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by GaoQingming on 2017/8/15 0015.
@@ -46,6 +48,15 @@ public class MVCContrller {
         logger.warn(s);
         logger.error(s);
         return s;
+    }
+
+    @RequestMapping("setTest")
+    @ResponseBody
+    public Set<String> setTest(HttpServletRequest request) {
+        Set<String> set = new HashSet<>();
+        set.add("111");
+        set.add("222");
+        return set;
     }
 
     @RequestMapping("third")

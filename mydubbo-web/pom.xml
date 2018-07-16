@@ -11,10 +11,6 @@
     <name>mydubbo-web Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>
-        <dependency>
-            <groupId>net.xuele.cloudwork</groupId>
-            <artifactId>cloudwork-api</artifactId>
-        </dependency>
 
         <!-- spring security -->
         <dependency>
@@ -180,6 +176,13 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
         </dependency>
+
+        <!--也不知道这是干嘛的-->
+        <!--<dependency>-->
+            <!--<groupId>org.jrobin</groupId>-->
+            <!--<artifactId>jrobin</artifactId>-->
+            <!--<version>1.5.9</version>-->
+        <!--</dependency>-->
 
     </dependencies>
     <build>

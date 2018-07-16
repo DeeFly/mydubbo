@@ -13,6 +13,13 @@
 
     <!--如果要继承父工程的jar包，则这里不要加dependencyManagement，父工程要加-->
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>5.0.3.RELEASE</version>
+        </dependency>
+
         <!--api-->
         <dependency>
             <groupId>com.gaofei</groupId>
