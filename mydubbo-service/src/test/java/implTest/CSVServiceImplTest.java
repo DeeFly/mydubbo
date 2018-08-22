@@ -1,3 +1,4 @@
+/*
 package implTest;
 
 import TestBase.BaseServiceTestWithoutTransaction;
@@ -6,9 +7,11 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+*/
 /**
  * Created by GaoQingming on 2018/3/1 0001.
- */
+ *//*
+
 @Service
 public class CSVServiceImplTest extends BaseServiceTestWithoutTransaction {
     @Autowired
@@ -20,3 +23,4 @@ public class CSVServiceImplTest extends BaseServiceTestWithoutTransaction {
     }
 
 }
+*/

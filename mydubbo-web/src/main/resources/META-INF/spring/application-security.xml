@@ -14,86 +14,111 @@
 
     <!--access='IS_AUTHENTICATED_ANONYMOUSLY' as an alternative if you still want the security filter chain to be applied.-->
     <http pattern="/controller/handlerTest*" security="none"/>
-    <http>
-        <intercept-url pattern="/**" access="hasRole('USER')" />
-        <form-login />
+    <http entry-point-ref="casEntryPoint">
+        <intercept-url pattern="/**" access="hasRole('USER')"/>
+        <custom-filter position="CAS_FILTER" ref="casFilter"/>
+        <!--<form-login />-->
         <!--For even more control over the destination, you can use the authentication-success-handler-ref attribute as an alternative to default-target-url-->
-        <logout />
+        <logout delete-cookies="JSESSIONID"/>
+
+        <!--单用户登录Concurrent Session Control-->
+        <session-management session-fixation-protection="none">
+            <!--第二个用户登录报错-->
+            <concurrency-control max-sessions="1" error-if-maximum-exceeded="true"/>
+        </session-management>
     </http>
 
+    <beans:bean id="casFilter"
+                class="org.springframework.security.cas.web.CasAuthenticationFilter">
+        <beans:property name="authenticationManager" ref="authenticationManager"/>
+    </beans:bean>
 
-    <!--<http entry-point-ref="casEntryPoint">-->
-        <!--<intercept-url pattern="/**" access="hasRole('USER')"/>-->
-        <!--<form-login/>-->
-        <!--<logout delete-cookies="JSESSIONID"/>-->
-        <!--<session-management invalid-session-url="/invalidSession.htm">  &lt;!&ndash; 如果想用session过期，要配合delete-cookies使用，存放到redis的话不知道如何处理&ndash;&gt;-->
-            <!--&lt;!&ndash;单人登录 error-if-maximum-exceeded 为true表示不允许第二个人登录&ndash;&gt;-->
-            <!--<concurrency-control max-sessions="1" error-if-maximum-exceeded="true"/>-->
-        <!--</session-management>-->
+    <beans:bean id="casEntryPoint"
+                class="org.springframework.security.cas.web.CasAuthenticationEntryPoint">
+        <beans:property name="loginUrl" value="https://localhost:8443/cas/login"/>
+        <beans:property name="serviceProperties" ref="serviceProperties"/>
+    </beans:bean>
 
-        <!--<custom-filter ref="exceptionTranslationFilter" after="EXCEPTION_TRANSLATION_FILTER"/>-->
-        <!--<custom-filter position="CAS_FILTER" ref="casFilter" />-->
-    <!--</http>-->
+    <beans:bean id="serviceProperties"
+                class="org.springframework.security.cas.ServiceProperties">
+        <!--service=-->
+        <beans:property name="service"
+                        value="https://localhost:8081/dubboweb/login/cas"/>
+        <beans:property name="sendRenew" value="false"/>
+    </beans:bean>
 
 
     <beans:bean id="userDetailsServiceProxy" class="com.gaofei.web.service.UserDetailsServiceProxy">
         <!--<beans:property name="userDetailsService" ref="userDetailsService"/>-->
     </beans:bean>
 
-    <authentication-manager>
+    <authentication-manager alias="authenticationManager">
         <!--<authentication-provider ref="" user-service-ref="">-->
-        <authentication-provider user-service-ref='userDetailsServiceProxy'>
-            <password-encoder ref="bcryptEncoder"/>
-
-        </authentication-provider>
+        <authentication-provider ref='casAuthenticationProvider'/>
     </authentication-manager>
+
+    <beans:bean id="casAuthenticationProvider"
+                class="org.springframework.security.cas.authentication.CasAuthenticationProvider">
+        <beans:property name="authenticationUserDetailsService">
+            <beans:bean class="org.springframework.security.core.userdetails.UserDetailsByNameServiceWrapper">
+                <beans:constructor-arg ref="userDetailsServiceProxy"/>
+            </beans:bean>
+        </beans:property>
+        <beans:property name="serviceProperties" ref="serviceProperties"/>
+        <beans:property name="ticketValidator">
+            <beans:bean class="org.jasig.cas.client.validation.Cas20ServiceTicketValidator">
+                <beans:constructor-arg index="0" value="https://localhost:8443/cas"/>
+            </beans:bean>
+        </beans:property>
+        <beans:property name="key" value="an_id_for_this_auth_provider_only"/>
+    </beans:bean>
 
     <beans:bean name="bcryptEncoder"
                 class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
 
     <!--处理拦截过程中抛出的异常-->
     <!--<beans:bean id="exceptionTranslationFilter" class="com.gaofei.web.security.MyExceptionTranslationFilter">-->
-        <!--&lt;!&ndash;认证失败后，返回一种认证方式，简单的登录或者cas登录等等&ndash;&gt;-->
-        <!--<beans:constructor-arg ref="casEntryPoint"></beans:constructor-arg>-->
-        <!--&lt;!&ndash;What happens if a user is already authenticated and they try to access a protected resource-->
-            <!--用户已经认证过了，但是这个用户要访问权限范围外的链接，将会由接下来的配置accessDeniedHandler处理。-->
-        <!--&ndash;&gt;-->
-        <!--<beans:property name="accessDeniedHandler" ref="accessDeniedHandler"/>-->
+    <!--&lt;!&ndash;认证失败后，返回一种认证方式，简单的登录或者cas登录等等&ndash;&gt;-->
+    <!--<beans:constructor-arg ref="casEntryPoint"></beans:constructor-arg>-->
+    <!--&lt;!&ndash;What happens if a user is already authenticated and they try to access a protected resource-->
+    <!--用户已经认证过了，但是这个用户要访问权限范围外的链接，将会由接下来的配置accessDeniedHandler处理。-->
+    <!--&ndash;&gt;-->
+    <!--<beans:property name="accessDeniedHandler" ref="accessDeniedHandler"/>-->
     <!--</beans:bean>-->
 
     <!--<beans:bean id="accessDeniedHandler"-->
-                <!--class="com.gaofei.web.security.MyAccessDeniedHandlerImpl">-->
+    <!--class="com.gaofei.web.security.MyAccessDeniedHandlerImpl">-->
     <!--</beans:bean>-->
 
     <!--拦截认证异常到CAS登录页-->
     <!--<beans:bean id="casEntryPoint" class="org.springframework.security.cas.web.CasAuthenticationEntryPoint">-->
-        <!--&lt;!&ndash;登录地址统一到http://www.xueleyun.com/member/&ndash;&gt;-->
-        <!--&lt;!&ndash;cas.url:http://cas.xueleyun.com/cas&ndash;&gt;-->
-        <!--<beans:property name="loginUrl" value="www.gaofei.web/login"/>-->
-        <!--<beans:property name="encodeServiceUrlWithSessionId" value="false"/>-->
-        <!--<beans:property name="serviceProperties" ref="serviceProperties"/>-->
+    <!--&lt;!&ndash;登录地址统一到http://www.xueleyun.com/member/&ndash;&gt;-->
+    <!--&lt;!&ndash;cas.url:http://cas.xueleyun.com/cas&ndash;&gt;-->
+    <!--<beans:property name="loginUrl" value="www.gaofei.web/login"/>-->
+    <!--<beans:property name="encodeServiceUrlWithSessionId" value="false"/>-->
+    <!--<beans:property name="serviceProperties" ref="serviceProperties"/>-->
     <!--</beans:bean>-->
 
     <!--<beans:bean id="serviceProperties"-->
-          <!--class="org.springframework.security.cas.ServiceProperties">-->
-        <!--<beans:property name="service"-->
-                  <!--value="https://localhost:8443/cas-sample/login/cas"/>-->
-        <!--<beans:property name="sendRenew" value="false"/>-->
+    <!--class="org.springframework.security.cas.ServiceProperties">-->
+    <!--<beans:property name="service"-->
+    <!--value="https://localhost:8443/cas-sample/login/cas"/>-->
+    <!--<beans:property name="sendRenew" value="false"/>-->
     <!--</beans:bean>-->
     <!--<beans:bean id="serviceProperties" class="org.springframework.security.cas.ServiceProperties">-->
-        <!--&lt;!&ndash;验证 member-web = http://www.xueleyun.com/member/&ndash;&gt;-->
-        <!--<beans:property name="service" value="${member-web}j_spring_cas_security_check"/>-->
-        <!--<beans:property name="sendRenew" value="false"/>-->
+    <!--&lt;!&ndash;验证 member-web = http://www.xueleyun.com/member/&ndash;&gt;-->
+    <!--<beans:property name="service" value="${member-web}j_spring_cas_security_check"/>-->
+    <!--<beans:property name="sendRenew" value="false"/>-->
     <!--</beans:bean>-->
 
     <!--httpServletRequest.getUserPrincipal(); 返回认证信息，HttpServletRequest.getRemoteUser()返回用户名，可以判断这个用户是否被认证了，-->
     <!--boolean isAdmin = httpServletRequest.isUserInRole("ADMIN");-->
 
     <!--分别用于不同用途的http配置,可以有多个-->
-        <!--&lt;!&ndash; Stateless RESTful service using Basic authentication &ndash;&gt;-->
+    <!--&lt;!&ndash; Stateless RESTful service using Basic authentication &ndash;&gt;-->
     <!--<http pattern="/restful/**" create-session="stateless">-->
-        <!--<intercept-url pattern='/**' access="hasRole('REMOTE')" />-->
-        <!--<http-basic />-->
+    <!--<intercept-url pattern='/**' access="hasRole('REMOTE')" />-->
+    <!--<http-basic />-->
     <!--</http>-->
 
     <!--&lt;!&ndash; Empty filter chain for the login page &ndash;&gt;-->
@@ -101,9 +126,9 @@
 
     <!--&lt;!&ndash; Additional filter chain for normal users, matching all other requests &ndash;&gt;-->
     <!--<http>-->
-        <!--<intercept-url pattern='/**' access="hasRole('USER')" />-->
-        <!--<form-login login-page='/login.htm' default-target-url="/home.htm"/>-->
-        <!--<logout />-->
+    <!--<intercept-url pattern='/**' access="hasRole('USER')" />-->
+    <!--<form-login login-page='/login.htm' default-target-url="/home.htm"/>-->
+    <!--<logout />-->
     <!--</http>-->
 
 
@@ -113,21 +138,21 @@
         然后将这里的id:filterChainProxy写到web.xml中的<filter-name></filter-name>中
         但是没有尝试过，可能web.xml中不用写?-->
     <!--<beans:bean id="filterChainProxy" class="org.springframework.security.web.FilterChainProxy">-->
-        <!--<beans:constructor-arg>-->
-            <!--<beans:list>-->
-                <!--<sec:filter-chain pattern="/restful/**" filters="-->
-		<!--securityContextPersistenceFilterWithASCFalse,-->
-		<!--basicAuthenticationFilter,-->
-		<!--exceptionTranslationFilter,-->
-		<!--filterSecurityInterceptor"/>-->
-                <!--<sec:filter-chain pattern="/**" filters="-->
-		<!--securityContextPersistenceFilterWithASCTrue,-->
-		<!--formLoginFilter,-->
-		<!--exceptionTranslationFilter,-->
-		<!--filterSecurityInterceptor"/>-->
-                <!--<sec:filter-chain pattern="/none/*" filters="none"/>-->
-            <!--</beans:list>-->
-        <!--</beans:constructor-arg>-->
+    <!--<beans:constructor-arg>-->
+    <!--<beans:list>-->
+    <!--<sec:filter-chain pattern="/restful/**" filters="-->
+    <!--securityContextPersistenceFilterWithASCFalse,-->
+    <!--basicAuthenticationFilter,-->
+    <!--exceptionTranslationFilter,-->
+    <!--filterSecurityInterceptor"/>-->
+    <!--<sec:filter-chain pattern="/**" filters="-->
+    <!--securityContextPersistenceFilterWithASCTrue,-->
+    <!--formLoginFilter,-->
+    <!--exceptionTranslationFilter,-->
+    <!--filterSecurityInterceptor"/>-->
+    <!--<sec:filter-chain pattern="/none/*" filters="none"/>-->
+    <!--</beans:list>-->
+    <!--</beans:constructor-arg>-->
     <!--</beans:bean>-->
 
     <!--路由匹配规则，是否严格，相同的结果也可以用代码来实现：-->
@@ -141,14 +166,29 @@
     -->
     <!--路由匹配规则，是否严格，相同的结果也可以用代码来实现：-->
     <!--<beans:bean id="httpFirewall"-->
-                <!--class="org.springframework.security.web.firewall.StrictHttpFirewall">-->
-        <!--<beans:property name="allowSemicolon" value="true"/>-->
+    <!--class="org.springframework.security.web.firewall.StrictHttpFirewall">-->
+    <!--<beans:property name="allowSemicolon" value="true"/>-->
     <!--</beans:bean>-->
     <!--<http-firewall ref="httpFirewall"/>-->
 
     <!--提示信息本地化 classpath:org/springframework/security/messages-->
     <!--<beans:bean id="messageSource"-->
-                <!--class="org.springframework.context.support.ReloadableResourceBundleMessageSource">-->
-        <!--<beans:property name="basename" value="properties.messages"/>-->
+    <!--class="org.springframework.context.support.ReloadableResourceBundleMessageSource">-->
+    <!--<beans:property name="basename" value="properties.messages"/>-->
     <!--</beans:bean>-->
+
+
+    <!--<http entry-point-ref="casEntryPoint">-->
+    <!--<intercept-url pattern="/**" access="hasRole('USER')"/>-->
+    <!--<form-login/>-->
+    <!--<logout delete-cookies="JSESSIONID"/>-->
+    <!--<session-management invalid-session-url="/invalidSession.htm">  &lt;!&ndash; 如果想用session过期，要配合delete-cookies使用，存放到redis的话不知道如何处理&ndash;&gt;-->
+    <!--&lt;!&ndash;单人登录 error-if-maximum-exceeded 为true表示不允许第二个人登录&ndash;&gt;-->
+    <!--<concurrency-control max-sessions="1" error-if-maximum-exceeded="true"/>-->
+    <!--</session-management>-->
+
+    <!--<custom-filter ref="exceptionTranslationFilter" after="EXCEPTION_TRANSLATION_FILTER"/>-->
+    <!--<custom-filter position="CAS_FILTER" ref="casFilter" />-->
+    <!--</http>-->
+
 </beans:beans>

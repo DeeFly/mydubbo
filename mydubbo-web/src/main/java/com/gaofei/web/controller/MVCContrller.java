@@ -33,7 +33,7 @@ public class MVCContrller {
 
     private final Logger logger = LoggerFactory.getLogger(MVCContrller.class);
 
-    @RequestMapping("login")
+    @RequestMapping("loginTest")
     public String login(HttpServletRequest request) {
         System.out.println("hahahhahahah");
         return "security/security";

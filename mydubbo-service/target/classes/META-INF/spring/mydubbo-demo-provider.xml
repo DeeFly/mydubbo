@@ -22,7 +22,7 @@
 
     <dubbo:application name="demo-provider" owner="gaofei" organization="xuele" />
 
-    <dubbo:registry address="zookeeper://zk.infra.middleware.xueleyun.com:2181" />
+    <dubbo:registry address="zookeeper://127.0.0.1:2181" />
     <dubbo:provider timeout="5000"/>
     <!--<dubbo:protocol name="dubbo" port="20880" serialization="kryo" optimizer="com.xyj.SerializationOptimizerImpl"/>-->
     <dubbo:protocol name="dubbo" port="20880" />
