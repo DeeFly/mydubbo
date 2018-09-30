@@ -24,8 +24,6 @@
         <property name="rootLogLevel" value="${log.service.level}"/>
     </bean>-->
 
-
-
     <bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource">
         <property name="driverClassName" value="${mysql.driverClassName}"/>
         <property name="url" value="${mysql.url}"/>
