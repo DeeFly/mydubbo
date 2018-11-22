@@ -11,42 +11,42 @@
             http://www.springframework.org/schema/rabbit
                 http://www.springframework.org/schema/rabbit/spring-rabbit-1.0.xsd">
 
-    <!--&lt;!&ndash; 连接服务器配置 &ndash;&gt;-->
-    <!--<rabbit:connection-factory id="connectionFactory" host="192.168.1.223"-->
-                               <!--username="gaofei" password="123456"-->
-                               <!--port="5672" channel-cache-size="100"/>-->
+    <!-- 连接服务器配置 -->
+    <rabbit:connection-factory id="connectionFactory" host="192.168.1.223"
+                               username="gaofei" password="123456"
+                               port="5672" channel-cache-size="100"/>
 
-    <!--<rabbit:admin connection-factory="connectionFactory"/>-->
+    <rabbit:admin connection-factory="connectionFactory"/>
 
-    <!--&lt;!&ndash; queues队列声明 &ndash;&gt;-->
-    <!--&lt;!&ndash; 发送通知队列 发送的时候指定route为下面的name的值，就会发送到指定的队列，然后有它相关联的消费者消费&ndash;&gt;-->
-    <!--&lt;!&ndash; id用于和下面的消费者关联，name用于指定路由吧类似这样&ndash;&gt;-->
-    <!--<rabbit:queue id="sendPost" name="routeKey"-->
-                  <!--durable="true" auto-delete="false" exclusive="false"/>-->
+    <!-- queues队列声明 可以指定多个-->
+    <!-- 发送通知队列 发送的时候指定route为下面的name的值，就会发送到指定的队列，然后有它相关联的消费者消费-->
+    <!-- id用于和下面的消费者关联，name用于指定路由吧类似这样-->
+    <rabbit:queue id="sendPost" name="routeKey"
+                  durable="true" auto-delete="false" exclusive="false"/>
 
-    <!--&lt;!&ndash; 交换机和队列通过routingKey绑定 &ndash;&gt;-->
-    <!--&lt;!&ndash; direct模式不支持routingKey通配，性能优于topic &ndash;&gt;-->
-    <!--&lt;!&ndash;和上面的queue配置有关，下面queue的值必须是上面的queue中的id&ndash;&gt;-->
-    <!--<rabbit:direct-exchange id="mqExchange" name="circle" durable="true" auto-delete="false">-->
-        <!--<rabbit:bindings>-->
-            <!--<rabbit:binding queue="sendPost" key="routeKey"></rabbit:binding>-->
-        <!--</rabbit:bindings>-->
-    <!--</rabbit:direct-exchange>-->
+    <!-- 交换机和队列通过routingKey绑定 -->
+    <!-- direct模式不支持routingKey通配，性能优于topic -->
+    <!--和上面的queue配置有关，下面queue的值必须是上面的queue中的id-->
+    <rabbit:direct-exchange id="mqExchange" name="circle" durable="true" auto-delete="false">
+        <rabbit:bindings>
+            <rabbit:binding queue="sendPost" key="routeKey"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:direct-exchange>
 
 
-    <!--&lt;!&ndash; 消息转换器 生产的数据转换后存入队列   继承AbstractMessageConverter&ndash;&gt;-->
-    <!--<bean id="messageConverter" class="com.gaofei.mq.MyMessageConvertor"></bean>-->
+    <!-- 消息转换器 生产的数据转换后存入队列   继承AbstractMessageConverter-->
+    <bean id="messageConverter" class="info.gaofei.rabbitmq.mq.MyMessageConvertor"></bean>
 
-    <!--<rabbit:template id="rabbitTemplate" connection-factory="connectionFactory" exchange="circle"-->
-                     <!--message-converter="messageConverter"/>-->
-    <!--<context:component-scan base-package="com.gaofei.mq">-->
-        <!--&lt;!&ndash; 细化扫描粒度 &ndash;&gt;-->
-        <!--<context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>-->
-    <!--</context:component-scan>-->
+    <rabbit:template id="rabbitTemplate" connection-factory="connectionFactory" exchange="circle"
+                     message-converter="messageConverter"/>
+    <context:component-scan base-package="info.gaofei.rabbitmq.mq">
+        <!-- 细化扫描粒度 -->
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
+    </context:component-scan>
 
-    <!--&lt;!&ndash; 消费者与队列绑定 &ndash;&gt;-->
-    <!--<rabbit:listener-container connection-factory="connectionFactory" acknowledge="auto" concurrency="30">-->
-        <!--<rabbit:listener queues="sendPost" ref="deletePostConsumer"/>-->
-    <!--</rabbit:listener-container>-->
+    <!-- 消费者与队列绑定 -->
+    <rabbit:listener-container connection-factory="connectionFactory" acknowledge="auto" concurrency="30">
+        <rabbit:listener queues="sendPost" ref="deletePostConsumer"/>
+    </rabbit:listener-container>
 
 </beans>

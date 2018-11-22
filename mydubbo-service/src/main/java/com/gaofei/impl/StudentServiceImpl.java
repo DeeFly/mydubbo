@@ -40,12 +40,21 @@ public class StudentServiceImpl implements StudentService {
     public int insertStudent(StudentDTO studentDTO) {
         StudentDomain studentDomain = new StudentDomain();
         BeanUtils.copyProperties(studentDTO,studentDomain);
-        int i = studentMapper.insertStudent(studentDomain);
+        insertStudent(studentDomain);
+        insertStudent(studentDomain);
         if (studentDTO.getAge() == 33) {
             throw new MydubboException("运行时异常，看有没有回滚");
         }
         logger.info("返回主键:{}",studentDomain.getStudentId());
         return studentDomain.getStudentId();
+    }
+
+    private void insertStudent(StudentDomain studentDomain) {
+        try {
+            studentMapper.insertStudent(studentDomain);
+        } catch (Exception e) {
+            logger.warn("插入学生失败,学生Id:{},exception:{}", studentDomain.getStudentId(), e);
+        }
     }
 
     public StudentDTO getStudentById(int id) {

@@ -78,7 +78,7 @@
             <tx:method name="query*" propagation="SUPPORTS" read-only="true"/>
             <tx:method name="get*" propagation="SUPPORTS" read-only="true"/>
             <!-- 其余方法不加事务-->
-            <tx:method name="*" propagation="REQUIRED" read-only="false"/>
+            <tx:method name="*" propagation="SUPPORTS" read-only="false"/>
         </tx:attributes>
     </tx:advice>
     <aop:config>

@@ -15,7 +15,6 @@
 
     <!--在resources目录下添加纯文本文件META-INF/dubbo/com.alibaba.dubbo.rpc.Filter-->
     <!--check=false 表示启动的时候不用非得启动服务，不检查是否启动了服务-->
-    <dubbo:reference id="interfp" interface="com.gaofei.interf.InterfTest" filter="myFilterTest" check="false"/>
     <dubbo:reference id="studentService" interface="com.gaofei.interf.StudentService" check="false"/>
     <dubbo:reference id="redisTest" interface="com.gaofei.interf.RedisTest" check="false"/>
     <dubbo:reference id="redisBroadCastSendService" interface="com.gaofei.redis.RedisBroadCastSendService" check="false"/>
